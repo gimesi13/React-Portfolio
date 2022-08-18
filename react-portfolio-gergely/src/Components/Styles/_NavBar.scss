@@ -1,0 +1,116 @@
+@import "./variables";
+
+.navbar {
+  @include flexCenter;
+  width: 100%;
+  background: lightblue;
+  height: 4rem;
+  justify-content: space-between;
+
+  .navbar-left {
+    @include flexCenter;
+    height: 100%;
+    background: lightcoral;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    div {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar-left {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .navbar-right {
+    @include flexCenter;
+
+    height: 100%;
+    background: lightpink;
+    padding-right: 2rem;
+    gap: 1rem;
+
+    .routers {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .soc-icons {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+      gap: 0.5rem;
+
+      div {
+        @include flexCenter;
+        .social-icons {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+
+    .connect-button-box {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+
+      .connect-button {
+        border: 2px solid black;
+        padding: 0.5rem;
+        white-space: nowrap;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .navbar-right {
+      visibility: hidden;
+    }
+  }
+
+  .hamburger-box {
+    @include flexCenter;
+    position: absolute;
+    right: 2rem;
+    z-index: 10;
+
+    .hamburger-icon {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: 576px) {
+    .hamburger-box {
+      visibility: hidden;
+    }
+  }
+
+  .dropdown-menu {
+    @include flexCenter;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    padding-top: 4rem;
+    padding: 1rem;
+    padding-top: 4rem;
+    background: lightgreen;
+
+    div {
+      @include flexCenter;
+      width: 100%;
+      height: 100%;
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 576px) {
+    .dropdown-menu {
+      visibility: hidden;
+    }
+  }
+}
