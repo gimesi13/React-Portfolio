@@ -4,7 +4,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 function Home() {
   return (
-    <section className="banner" id="home">
+    <section className="banner home-section" id="home">
       <div className="home-left">
         <div className="home-left-welcome">Welcome to my Portfolio</div>
         <h1>Hi! I'm Gergely!</h1>

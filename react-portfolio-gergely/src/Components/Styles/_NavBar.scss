@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
   @include flexCenter;
-  width: 100vw;
+  width: 100%;
   background: lightblue;
   height: $navbarHeight;
   justify-content: space-between;
@@ -15,21 +15,36 @@
     @include flexCenter;
     height: 100%;
     background: lightcoral;
+
     padding-left: 4rem;
     padding-right: 4rem;
-
-    div {
-      font-weight: bold;
-      font-size: 1.5rem;
+    @media (max-width: 576px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
-  }
-  @media (max-width: 768px) {
-    .navbar-left {
+    @media (max-width: 768px) {
       padding-left: 2rem;
       padding-right: 2rem;
     }
-  }
+    @media (min-width: 992px) {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
 
+    div {
+      font-weight: bold;
+      font-size: 2rem;
+      @media (max-width: 576px) {
+      }
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+      @media (min-width: 992px) {
+        font-size: 4rem;
+      }
+    }
+  }
+  /* change it all to mobile first... */
   .navbar-right {
     @include flexCenter;
 
@@ -38,15 +53,20 @@
     padding-right: 2rem;
     padding-left: 2rem;
     gap: 1rem;
+    @media (max-width: 576px) {
+      visibility: hidden;
+    }
+    @media (max-width: 768px) {
+    }
+    @media (min-width: 992px) {
+    }
 
     .routers {
       @include flexCenter;
       height: 100%;
       width: 100%;
       gap: 2rem;
-    }
-    @media (max-width: 768px) {
-      .routers {
+      @media (max-width: 768px) {
         gap: 1rem;
       }
     }
@@ -78,25 +98,18 @@
       }
     }
   }
-  @media (max-width: 576px) {
-    .navbar-right {
-      visibility: hidden;
-    }
-  }
 
   .hamburger-box {
     @include flexCenter;
     position: absolute;
     right: 2rem;
     z-index: 10;
+    @media (min-width: 576px) {
+      visibility: hidden;
+    }
 
     .hamburger-icon {
       font-size: 2rem;
-    }
-  }
-  @media (min-width: 576px) {
-    .hamburger-box {
-      visibility: hidden;
     }
   }
 
@@ -111,17 +124,15 @@
     padding-top: 4rem;
     gap: 2rem;
     background: lightgreen;
+    @media (min-width: 576px) {
+      visibility: hidden;
+    }
 
     div {
       @include flexCenter;
       width: 100%;
       height: 100%;
       font-size: 3rem;
-    }
-  }
-  @media (min-width: 576px) {
-    .dropdown-menu {
-      visibility: hidden;
     }
   }
 }

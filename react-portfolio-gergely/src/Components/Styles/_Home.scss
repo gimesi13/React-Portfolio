@@ -1,15 +1,20 @@
 @import "./variables";
 
-.banner {
+.home-section {
   @include flexCenter;
   padding-top: $navbarHeight;
   padding-right: 1rem;
   padding-left: 1rem;
   gap: 1rem;
+  min-height: 80vh;
+  padding-bottom: 4rem;
+  @media (min-width: 992px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 
-  /* this is just for now */
-  min-height: 30rem;
-  /* this is just for now */
   background: lightgreen;
 
   /*//// LEFT SECTION ////*/
@@ -21,15 +26,24 @@
     height: 100%;
     width: 100%;
     margin: 1rem;
+    @media (min-width: 992px) {
+      font-size: 2rem;
+    }
 
     .home-left-welcome {
       border: 2px solid black;
       padding: 0.5rem;
       font-weight: bold;
+      @media (min-width: 992px) {
+        font-size: 3rem;
+      }
     }
 
     h1 {
       font-size: 3rem;
+      @media (min-width: 992px) {
+        font-size: 6rem;
+      }
       margin: 0;
     }
 
@@ -41,6 +55,9 @@
       .right-arrow-svg {
         margin: 0.5rem;
         font-size: 1.2rem;
+        @media (min-width: 992px) {
+          font-size: 2.4rem;
+        }
       }
     }
   }
@@ -55,11 +72,9 @@
 
     .programmer-svg {
       width: 17rem;
+      @media (min-width: 992px) {
+        width: 34rem;
+      }
     }
-  }
-}
-@media (max-width: 576px) {
-  .banner {
-    flex-direction: column;
   }
 }
