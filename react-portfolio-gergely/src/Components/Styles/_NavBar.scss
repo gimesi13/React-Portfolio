@@ -1,10 +1,14 @@
 @import "./variables";
 
 .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   @include flexCenter;
-  width: 100%;
+  width: 100vw;
   background: lightblue;
-  height: 4rem;
+  height: $navbarHeight;
   justify-content: space-between;
 
   .navbar-left {
@@ -32,6 +36,7 @@
     height: 100%;
     background: lightpink;
     padding-right: 2rem;
+    padding-left: 2rem;
     gap: 1rem;
 
     .routers {
@@ -39,6 +44,11 @@
       height: 100%;
       width: 100%;
       gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .routers {
+        gap: 1rem;
+      }
     }
 
     .soc-icons {
@@ -99,6 +109,7 @@
     padding-top: 4rem;
     padding: 1rem;
     padding-top: 4rem;
+    gap: 2rem;
     background: lightgreen;
 
     div {

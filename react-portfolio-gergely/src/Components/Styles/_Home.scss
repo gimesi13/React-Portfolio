@@ -1,0 +1,39 @@
+@import "./variables";
+
+.banner {
+  @include flexCenter;
+  padding-top: $navbarHeight;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  gap: 2rem;
+  /* this is just for now */
+  min-height: 30rem;
+  /* this is just for now */
+  background: lightgreen;
+
+  .home-left {
+    background: lightcoral;
+    @include flexCenter;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+  .home-right {
+    background: lightblue;
+    @include flexCenter;
+    height: 100%;
+    width: 100%;
+    .programmer-svg {
+      width: 17rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
