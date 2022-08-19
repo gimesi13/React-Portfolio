@@ -3,14 +3,16 @@
 .banner {
   @include flexCenter;
   padding-top: $navbarHeight;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  gap: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  gap: 1rem;
+
   /* this is just for now */
   min-height: 30rem;
   /* this is just for now */
   background: lightgreen;
 
+  /*//// LEFT SECTION ////*/
   .home-left {
     background: lightcoral;
     @include flexCenter;
@@ -18,12 +20,39 @@
     align-items: flex-start;
     height: 100%;
     width: 100%;
+    margin: 1rem;
+
+    .home-left-welcome {
+      border: 2px solid black;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .home-left-connect {
+      @include flexCenter;
+      padding: 1rem;
+      font-weight: bold;
+
+      .right-arrow-svg {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+      }
+    }
   }
+
+  /*//// RIGHT SECTION ////*/
   .home-right {
     background: lightblue;
     @include flexCenter;
     height: 100%;
     width: 100%;
+    margin: 1rem;
+
     .programmer-svg {
       width: 17rem;
     }
@@ -32,8 +61,5 @@
 @media (max-width: 576px) {
   .banner {
     flex-direction: column;
-    gap: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
   }
 }

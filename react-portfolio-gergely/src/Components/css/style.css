@@ -213,13 +213,15 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 4em;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  gap: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  gap: 1rem;
   /* this is just for now */
   min-height: 30rem;
   /* this is just for now */
   background: lightgreen;
+  /*//// LEFT SECTION ////*/
+  /*//// RIGHT SECTION ////*/
 }
 .banner .home-left {
   background: lightcoral;
@@ -241,6 +243,33 @@
           align-items: flex-start;
   height: 100%;
   width: 100%;
+  margin: 1rem;
+}
+.banner .home-left .home-left-welcome {
+  border: 2px solid black;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.banner .home-left h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.banner .home-left .home-left-connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+.banner .home-left .home-left-connect .right-arrow-svg {
+  margin: 0.5rem;
+  font-size: 1.2rem;
 }
 .banner .home-right {
   background: lightblue;
@@ -255,6 +284,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
+  margin: 1rem;
 }
 .banner .home-right .programmer-svg {
   width: 17rem;
@@ -266,21 +296,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
   }
 }
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -288,6 +307,5 @@ body {
 }
 
 .App {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
