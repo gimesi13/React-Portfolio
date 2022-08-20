@@ -1,18 +1,54 @@
 @import "./variables";
 
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
 .home-section {
   @include flexCenter;
-  padding-top: $navbarHeight;
+  flex-direction: column;
+  padding-top: $navbarHeight + 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-bottom: 6rem;
   gap: 1rem;
   min-height: 80vh;
-  padding-bottom: 4rem;
-  @media (min-width: 992px) {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  //tablet//
+  @media (min-width: 576px) {
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
-  @media (max-width: 576px) {
-    flex-direction: column;
+  //laptop//
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  //desktop//
+  @media (min-width: 992px) {
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  //large//
+  @media (min-width: 1200px) {
+    gap: 2rem;
+    padding-top: $navbarHeight + 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   background: lightgreen;
@@ -23,40 +59,84 @@
     @include flexCenter;
     flex-direction: column;
     align-items: flex-start;
+    flex: 150%;
     height: 100%;
     width: 100%;
     margin: 1rem;
+    //tablet//
+    @media (min-width: 576px) {
+    }
+    //laptop//
+    @media (min-width: 768px) {
+    }
+    //desktop//
     @media (min-width: 992px) {
-      font-size: 2rem;
+    }
+    //large//
+    @media (min-width: 1200px) {
     }
 
     .home-left-welcome {
       border: 2px solid black;
       padding: 0.5rem;
       font-weight: bold;
+      //desktop//
       @media (min-width: 992px) {
-        font-size: 3rem;
+        padding: 1rem;
+        font-size: 1.7rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        padding: 1.5rem;
+        font-size: 2rem;
       }
     }
 
     h1 {
       font-size: 3rem;
-      @media (min-width: 992px) {
-        font-size: 6rem;
-      }
       margin: 0;
+      //desktop//
+      @media (min-width: 992px) {
+        font-size: 4rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 5rem;
+      }
+    }
+
+    p {
+      @media (min-width: 992px) {
+        font-size: 1.6rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 1.8rem;
+      }
     }
 
     .home-left-connect {
       @include flexCenter;
       padding: 1rem;
       font-weight: bold;
+      font-size: 1.5rem;
+      @media (min-width: 992px) {
+        font-size: 1.7rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 2rem;
+      }
 
       .right-arrow-svg {
         margin: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         @media (min-width: 992px) {
-          font-size: 2.4rem;
+          font-size: 1.6rem;
+        }
+        //large//
+        @media (min-width: 1200px) {
+          font-size: 1.8rem;
         }
       }
     }
@@ -73,7 +153,11 @@
     .programmer-svg {
       width: 17rem;
       @media (min-width: 992px) {
-        width: 34rem;
+        width: 22rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        width: 30rem;
       }
     }
   }
