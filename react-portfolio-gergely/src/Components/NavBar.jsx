@@ -17,7 +17,7 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <div>LOGO</div>
+        <div className="navbar-left-logo">LOGO</div>
       </div>
       <div className="navbar-right">
         <div className="routers">
