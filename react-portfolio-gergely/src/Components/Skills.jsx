@@ -6,7 +6,7 @@ function Skills() {
     <section className="banner skills-section" id="home">
       <motion.div
         initial={{
-          y: -50,
+          y: -90,
         }}
         className="skills"
       >
