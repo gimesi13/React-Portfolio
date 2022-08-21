@@ -1,0 +1,144 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.contact {
+  background: lightblue;
+  @include flexCenter;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  //tablet//
+  @media (min-width: 576px) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  //laptop//
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  //desktop//
+  @media (min-width: 992px) {
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  //large//
+  @media (min-width: 1200px) {
+    gap: 2rem;
+    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .contact-left {
+    background: rgb(173, 230, 173);
+    @include flexCenter;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+
+    .inbox-svg {
+      width: 17rem;
+      @media (min-width: 992px) {
+        width: 22rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        width: 30rem;
+      }
+    }
+  }
+
+  .contact-right {
+    background: lightcoral;
+    @include flexCenter;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 150%;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+    gap: 1rem;
+
+    h1 {
+      padding: 0.5rem;
+      font-size: 3rem;
+      margin: 0;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      //desktop//
+      @media (min-width: 992px) {
+        font-size: 4rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 5rem;
+      }
+    }
+
+    .contact-right-name {
+      @include flexCenter;
+      width: 100%;
+      gap: 1rem;
+
+      div {
+        padding: 1rem;
+        flex: 1;
+        border-radius: 1rem;
+        border: 2px solid black;
+      }
+    }
+    .contact-right-email-phone {
+      @include flexCenter;
+      width: 100%;
+      gap: 1rem;
+
+      div {
+        padding: 1rem;
+        flex: 1;
+        border-radius: 1rem;
+        border: 2px solid black;
+      }
+    }
+
+    .contact-right-message {
+      width: 100%;
+
+      div {
+        min-height: 20vh;
+        border: 2px solid black;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+    }
+
+    .contact-right-send {
+      @include flexCenter;
+      padding: 1rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+      border: 2px solid black;
+    }
+  }
+}

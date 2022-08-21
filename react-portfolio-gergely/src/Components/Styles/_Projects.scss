@@ -77,7 +77,7 @@
     }
   }
 
-  .projects-grig {
+  .tab-1 {
     background: rgb(255, 165, 232);
 
     display: grid;
@@ -111,5 +111,13 @@
       height: 13rem;
       /* for now*/
     }
+  }
+  .tab-2 {
+    @include flexCenter;
+    p {
+    }
+  }
+  .tab-3 {
+    @include flexCenter;
   }
 }
