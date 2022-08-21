@@ -1,0 +1,110 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.projects {
+  @include flexCenter;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  background: lightgreen;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    //tablet//
+    @media (min-width: 576px) {
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+
+  .tabs {
+    background: rgb(154, 231, 255);
+
+    @include flexCenter;
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 2px solid black;
+
+    //tablet//
+    @media (min-width: 576px) {
+    }
+    //laptop//
+    @media (min-width: 768px) {
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      width: 60%;
+    }
+    //large//
+    @media (min-width: 1200px) {
+    }
+    div {
+      @include flexCenter;
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+
+  .projects-grig {
+    background: rgb(255, 165, 232);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 1rem;
+    //tablet//
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      gap: 2rem;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    //large//
+    @media (min-width: 1200px) {
+      width: 85%;
+    }
+
+    div {
+      @include flexCenter;
+      border-radius: 2rem;
+
+      /* for now*/
+      height: 13rem;
+      /* for now*/
+    }
+  }
+}
