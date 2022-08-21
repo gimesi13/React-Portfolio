@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import thinker from "./Pictures/undraw_code_thinking_re_gka2.svg";
 
 function Projects() {
   //setting up states for the tab operators
@@ -48,6 +49,9 @@ function Projects() {
 
       {activeTab === "tab2" && (
         <div className="projects-grig tab-2">
+          <div className="thinker">
+            <img className="thinker-svg" src={thinker} alt="thinker" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A
             voluptatibus blanditiis nihil non, iste ipsam perferendis debitis
@@ -58,6 +62,9 @@ function Projects() {
 
       {activeTab === "tab3" && (
         <div className="projects-grig tab-3">
+          <div className="thinker">
+            <img className="thinker-svg" src={thinker} alt="thinker" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
             veritatis.

@@ -4,6 +4,7 @@ import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { GrMenu } from "react-icons/gr";
 import { GrClose } from "react-icons/gr";
+import hacker from "./Pictures/undraw_hacker_mind_-6-y85.svg";
 
 function NavBar() {
   /* STATES */
@@ -17,7 +18,9 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <div className="navbar-left-logo">LOGO</div>
+        <div className="navbar-left-logo">
+          <img className="hacker-svg" src={hacker} alt="hacker" />
+        </div>
       </div>
       <div className="navbar-right">
         <div className="routers">

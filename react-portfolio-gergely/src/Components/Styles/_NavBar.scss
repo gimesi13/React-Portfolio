@@ -56,11 +56,14 @@
     }
 
     .navbar-left-logo {
-      font-weight: bold;
-      font-size: 3rem;
-      //desktop//
-      @media (min-width: 992px) {
-        font-size: 3.5rem;
+      @include flexCenter;
+
+      .hacker-svg {
+        width: 9rem;
+        //desktop//
+        @media (min-width: 992px) {
+          width: 10rem;
+        }
       }
     }
   }

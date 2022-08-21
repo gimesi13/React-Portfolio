@@ -112,12 +112,37 @@
       /* for now*/
     }
   }
-  .tab-2 {
-    @include flexCenter;
-    p {
-    }
-  }
+  .tab-2,
   .tab-3 {
+    background: rgb(255, 165, 232);
+
     @include flexCenter;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+    .thinker {
+      @include flexCenter;
+      .thinker-svg {
+        width: 15rem;
+        //laptop//
+        @media (min-width: 768px) {
+          width: 25rem;
+        }
+      }
+    }
+
+    p {
+      width: 100%;
+      //desktop//
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+    }
+
+    //desktop//
+    @media (min-width: 992px) {
+      flex-direction: row;
+      width: 70%;
+    }
   }
 }
