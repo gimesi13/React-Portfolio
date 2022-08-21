@@ -19,6 +19,8 @@
   @include flexCenter;
   flex-direction: column;
   padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   gap: 2rem;
   background: lightgreen;
 
@@ -48,7 +50,7 @@
     background: rgb(154, 231, 255);
 
     @include flexCenter;
-    width: 70%;
+    width: 80%;
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 1rem;
@@ -56,6 +58,7 @@
 
     //tablet//
     @media (min-width: 576px) {
+      width: 70%;
     }
     //laptop//
     @media (min-width: 768px) {
@@ -99,6 +102,8 @@
     }
 
     div {
+      background: rgb(255, 246, 169);
+
       @include flexCenter;
       border-radius: 2rem;
 

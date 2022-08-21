@@ -25,13 +25,18 @@
   /* for now */
   @include flexCenter;
   flex-direction: column;
-  margin: 3rem;
+  margin: 2rem;
   margin-top: 0;
   margin-bottom: 0;
   padding: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 3rem;
+  //tablet//
+  @media (min-width: 576px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   //laptop//
   @media (min-width: 768px) {
     border-radius: 4rem;

@@ -494,13 +494,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3rem;
+  margin: 2rem;
   margin-top: 0;
   margin-bottom: 0;
   padding: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 3rem;
+}
+@media (min-width: 576px) {
+  .skills {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 @media (min-width: 768px) {
   .skills {
@@ -562,6 +568,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   gap: 2rem;
   background: lightgreen;
 }
@@ -595,11 +603,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 80%;
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 1rem;
   border: 2px solid black;
+}
+@media (min-width: 576px) {
+  .projects .tabs {
+    width: 70%;
+  }
 }
 @media (min-width: 992px) {
   .projects .tabs {
@@ -647,6 +660,7 @@
   }
 }
 .projects .projects-grig div {
+  background: rgb(255, 246, 169);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
