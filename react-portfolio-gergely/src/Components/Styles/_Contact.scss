@@ -49,6 +49,7 @@
     padding-left: 2rem;
   }
 
+  /* LEFT SECTION */
   .contact-left {
     background: rgb(173, 230, 173);
     @include flexCenter;
@@ -72,6 +73,7 @@
     }
   }
 
+  /* RIGHT SECTION */
   .contact-right {
     background: lightcoral;
     @include flexCenter;
@@ -92,10 +94,10 @@
 
     h1 {
       padding: 0.5rem;
-      font-size: 3rem;
       margin: 0;
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
+      font-size: 3rem;
     }
 
     .contact-right-name {
@@ -128,9 +130,9 @@
 
       div {
         min-height: 20vh;
-        border: 2px solid black;
         padding: 0.5rem;
         border-radius: 1rem;
+        border: 2px solid black;
       }
     }
 
