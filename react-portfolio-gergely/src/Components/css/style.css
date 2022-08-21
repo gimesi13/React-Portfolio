@@ -729,6 +729,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1rem;
   gap: 1rem;
   font-size: 1.5rem;
@@ -759,7 +762,6 @@
 }
 @media (min-width: 1200px) {
   .contact {
-    gap: 2rem;
     padding: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -780,17 +782,22 @@
   width: 100%;
   margin: 1rem;
 }
-.contact .contact-left .inbox-svg {
-  width: 17rem;
-}
-@media (min-width: 992px) {
-  .contact .contact-left .inbox-svg {
-    width: 22rem;
+@media (min-width: 1200px) {
+  .contact .contact-left {
+    max-width: 40%;
   }
 }
-@media (min-width: 1200px) {
+.contact .contact-left .inbox-svg {
+  width: 80%;
+}
+@media (min-width: 576px) {
   .contact .contact-left .inbox-svg {
-    width: 30rem;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .contact .contact-left .inbox-svg {
+    width: 100%;
   }
 }
 .contact .contact-right {
@@ -814,10 +821,19 @@
   -webkit-box-flex: 150%;
       -ms-flex: 150%;
           flex: 150%;
-  height: 100%;
   width: 100%;
   margin: 1rem;
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-right {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact .contact-right {
+    max-width: 45%;
+  }
 }
 .contact .contact-right h1 {
   padding: 0.5rem;
@@ -825,16 +841,6 @@
   margin: 0;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-}
-@media (min-width: 992px) {
-  .contact .contact-right h1 {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .contact .contact-right h1 {
-    font-size: 5rem;
-  }
 }
 .contact .contact-right .contact-right-name {
   display: -webkit-box;
