@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import programmer from "./Pictures/undraw_programming_re_kg9v.svg";
 import { BsArrowRightCircle } from "react-icons/bs";
 
-function Home() {
+function Home({ setLocation }) {
   return (
     <section className="banner home-section" id="home">
       <div className="home-left">

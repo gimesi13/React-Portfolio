@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import thinker from "./Pictures/undraw_code_thinking_re_gka2.svg";
+import { motion } from "framer-motion";
 
-function Projects() {
+function Projects({ setLocation }) {
   //setting up states for the tab operators
   const [activeTab, setActiveTab] = useState("tab1");
 

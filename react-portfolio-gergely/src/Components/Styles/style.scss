@@ -32,3 +32,8 @@ body {
 .navlink-t2 {
   top: -$navbarHeight * 2;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

@@ -16,13 +16,13 @@
 */
 
 .navbar {
+  background: lightblue;
   z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   @include flexCenter;
-  background: lightblue;
   height: $navbarHeight;
   justify-content: space-between;
   //large//
@@ -63,11 +63,8 @@
       @include flexCenter;
 
       .hacker-svg {
-        width: 9rem;
+        width: $navbarHeight;
         //desktop//
-        @media (min-width: 992px) {
-          width: 10rem;
-        }
       }
     }
   }
@@ -176,4 +173,9 @@
       visibility: hidden;
     }
   }
+}
+
+.navbar.small {
+  background: lightblue;
+  height: $navbarHeight - 2rem;
 }

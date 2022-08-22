@@ -15,6 +15,7 @@
 } 
 */
 .navbar {
+  background: lightblue;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -29,7 +30,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: lightblue;
   height: 8rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -95,12 +95,7 @@
           align-items: center;
 }
 .navbar .navbar-left .navbar-left-logo .hacker-svg {
-  width: 9rem;
-}
-@media (min-width: 992px) {
-  .navbar .navbar-left .navbar-left-logo .hacker-svg {
-    width: 10rem;
-  }
+  width: 8rem;
 }
 .navbar .navbar-right {
   display: -webkit-box;
@@ -264,6 +259,11 @@
   .navbar .dropdown-menu {
     visibility: hidden;
   }
+}
+
+.navbar.small {
+  background: lightblue;
+  height: 6rem;
 }
 
 /* MIXINS */
@@ -1184,4 +1184,9 @@ body {
 
 .navlink-t2 {
   top: -16rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function Skills() {
+function Skills({ setLocation }) {
   return (
     <section className="banner skills-section">
       <div className="navlink navlink-t2" id="skills" />

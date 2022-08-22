@@ -7,6 +7,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 function App() {
+  /* STATES */
   return (
     <div className="App">
       <NavBar />
