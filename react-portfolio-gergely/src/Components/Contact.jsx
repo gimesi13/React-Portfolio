@@ -3,7 +3,9 @@ import inbox from "./Pictures/undraw_mobile_inbox_re_ciwq.svg";
 
 function Contact() {
   return (
-    <section className="banner contact" id="contact">
+    <section className="banner contact">
+      <div className="navlink" id="contact" />
+
       <div className="contact-left">
         <img className="inbox-svg" src={inbox} alt="inbox" />
       </div>

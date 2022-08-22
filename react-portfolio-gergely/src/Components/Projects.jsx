@@ -6,7 +6,9 @@ function Projects() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   return (
-    <div className="banner projects">
+    <section className="banner projects">
+      <div className="navlink" id="projects" />
+
       <h1>Projects</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam
@@ -71,7 +73,7 @@ function Projects() {
           </p>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

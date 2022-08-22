@@ -16,6 +16,7 @@
 */
 
 .contact {
+  position: relative;
   background: lightblue;
   @include flexCenter;
   flex-direction: column;

@@ -245,13 +245,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   right: 0;
   top: 0;
+  bottom: 0;
+  left: 0;
   font-size: 5rem;
   padding: 1rem;
   padding-top: 8rem;
@@ -299,7 +301,7 @@
   padding-top: 9rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-bottom: 6rem;
+  padding-bottom: 7rem;
   gap: 1rem;
   min-height: 80vh;
   font-size: 1.5rem;
@@ -490,6 +492,7 @@
 */
 .skills-section {
   background: rgb(238, 238, 142);
+  position: relative;
 }
 
 .skills {
@@ -569,6 +572,7 @@
 } 
 */
 .projects {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,6 +773,7 @@
 } 
 */
 .contact {
+  position: relative;
   background: lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1156,6 +1161,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -1166,4 +1175,13 @@ body {
 
 .App {
   width: 100%;
+}
+
+.navlink {
+  position: absolute;
+  top: -8rem;
+}
+
+.navlink-t2 {
+  top: -16rem;
 }/*# sourceMappingURL=style.css.map */

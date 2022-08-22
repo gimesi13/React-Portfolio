@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 function Skills() {
   return (
-    <section className="banner skills-section" id="home">
+    <section className="banner skills-section">
+      <div className="navlink navlink-t2" id="skills" />
       <motion.div
         initial={{
           y: -90,

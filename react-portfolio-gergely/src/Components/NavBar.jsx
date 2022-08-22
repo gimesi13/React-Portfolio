@@ -18,9 +18,11 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <div className="navbar-left-logo">
-          <img className="hacker-svg" src={hacker} alt="hacker" />
-        </div>
+        <a href="#home">
+          <div className="navbar-left-logo">
+            <img className="hacker-svg" src={hacker} alt="hacker" />
+          </div>
+        </a>
       </div>
       <div className="navbar-right">
         <div className="routers">
@@ -53,10 +55,18 @@ function NavBar() {
       </div>
       {menuOpened ? (
         <div className="dropdown-menu">
-          <div>Home</div>
-          <div>Skills</div>
-          <div>Project</div>
-          <div>Contact</div>
+          <a href="#home">
+            <div>Home</div>
+          </a>{" "}
+          <a href="#skills">
+            <div>Skills</div>
+          </a>{" "}
+          <a href="#projects">
+            <div>Projects</div>
+          </a>{" "}
+          <a href="#contact">
+            <div>Contact</div>
+          </a>
         </div>
       ) : (
         ""

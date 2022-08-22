@@ -16,6 +16,7 @@
 */
 
 .projects {
+  position: relative;
   @include flexCenter;
   flex-direction: column;
   padding: 1rem;
