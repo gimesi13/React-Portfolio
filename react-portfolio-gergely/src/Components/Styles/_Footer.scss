@@ -1,0 +1,133 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.footer-section {
+  background: rgb(238, 238, 142);
+
+  /* UPPER BOX */
+  .footer-build-box {
+    /* for now */
+    background: lightpink;
+    /* for now */
+    @include flexCenter;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 3rem;
+    gap: 1rem;
+    //tablet//
+    @media (min-width: 576px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      border-radius: 4rem;
+      padding: 4rem;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      gap: 2rem;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      flex-direction: row;
+      border-radius: 5rem;
+      padding: 5rem;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      gap: 4rem;
+    }
+    //large//
+    @media (min-width: 1200px) {
+      border-radius: 6rem;
+      padding: 6rem;
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    div {
+      background: lightblue;
+      width: 100%;
+      height: 10rem;
+    }
+  }
+
+  /* BOTTOM PART */
+  .footer-bottom-container {
+    @include flexCenter;
+    justify-content: space-between;
+    background: lightgreen;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    //tablet//
+    @media (min-width: 576px) {
+      padding-left: 4vw;
+      padding-right: 4vw;
+    }
+
+    /* LEFT SECTION */
+    .footer-bottom-left {
+      @include flexCenter;
+
+      .up-arrow-svg {
+        font-size: 5rem;
+      }
+    }
+    /* RIGHT SECTION */
+    .footer-bottom-right {
+      background: lightblue;
+      @include flexCenter;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .soc-icons-footer {
+        background: lightpink;
+        @include flexCenter;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        gap: 0.5rem;
+
+        .social-icons {
+          //desktop//
+          width: 2.5rem;
+          height: 2.5rem;
+          @media (min-width: 576px) {
+            padding: 0.2rem;
+          }
+        }
+      }
+      div {
+        font-size: 1.2rem;
+        //tablet//
+        @media (min-width: 576px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

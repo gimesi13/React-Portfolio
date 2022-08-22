@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+  padding-bottom: 8rem;
   gap: 1rem;
   font-size: 1.5rem;
 
@@ -45,8 +46,7 @@
   //large//
   @media (min-width: 1200px) {
     padding: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-bottom: 8rem;
   }
 
   /* LEFT SECTION */
