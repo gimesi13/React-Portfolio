@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import programmer from "./Pictures/undraw_programming_re_kg9v.svg";
 import { BsArrowRightCircle } from "react-icons/bs";
 
-function Home({ setLocation }) {
+function Home() {
   return (
     <section className="banner home-section" id="home">
       <div className="home-left">
@@ -15,9 +15,11 @@ function Home({ setLocation }) {
           ipsam totam? Consectetur aliquam accusamus sit assumenda quia. Eius,
           rerum quo!
         </p>
-        <div className="home-left-connect">
-          Lets Connect <BsArrowRightCircle className="right-arrow-svg" />
-        </div>
+        <a href="#contact">
+          <div className="home-left-connect">
+            Lets Connect <BsArrowRightCircle className="right-arrow-svg" />
+          </div>
+        </a>
       </div>
       <div className="home-right">
         <img className="programmer-svg" src={programmer} alt="programmer" />

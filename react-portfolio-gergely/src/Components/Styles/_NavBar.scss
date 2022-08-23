@@ -146,13 +146,16 @@
     @include flexCenter;
     position: absolute;
     right: 2rem;
+    cursor: pointer;
     //tablet//
     @media (min-width: 768px) {
       visibility: hidden;
     }
-
-    .hamburger-icon {
-      font-size: 3rem;
+    div {
+      @include flexCenter;
+      .hamburger-icon {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -166,7 +169,6 @@
     left: 0;
     font-size: 5rem;
     padding: 1rem;
-    padding-top: $navbarHeight;
     gap: 2rem;
     background: lightgreen;
     @media (min-width: 768px) {
