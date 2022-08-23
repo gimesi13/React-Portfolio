@@ -20,7 +20,9 @@ function Footer() {
 
       <div className="footer-bottom-container">
         <div className="footer-bottom-left">
-          <BsArrowUpCircleFill className="up-arrow-svg" />
+          <a href="#home">
+            <BsArrowUpCircleFill className="up-arrow-svg" />
+          </a>
         </div>
         <div className="footer-bottom-right">
           <div className="soc-icons-footer">

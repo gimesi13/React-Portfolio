@@ -12,9 +12,9 @@ function Projects({ setLocation }) {
 
       <h1>Projects</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam
-        officia voluptas distinctio deleniti sed? Harum voluptates eveniet
-        pariatur. Doloribus nesciunt quia in maiores ex?
+        Building real, functioning applications plays a major role in my
+        learning process. Some I made to help small Businesses, some just for
+        fun. Check them out:
       </p>
       <div className="tabs">
         <div

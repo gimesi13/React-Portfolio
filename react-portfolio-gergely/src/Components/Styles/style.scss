@@ -30,11 +30,11 @@ body {
 
 .navlink {
   position: absolute;
-  top: -$navbarHeight;
+  top: -$navbarHeight + 2rem;
 }
 
 .navlink-t2 {
-  top: -$navbarHeight * 2;
+  top: -$navbarHeight - 5rem;
 }
 
 a {

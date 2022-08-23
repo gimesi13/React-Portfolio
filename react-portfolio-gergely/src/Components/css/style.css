@@ -397,6 +397,7 @@
 .home-section .home-left h1 {
   font-size: 3rem;
   margin: 0;
+  margin-top: 1rem;
 }
 @media (min-width: 992px) {
   .home-section .home-left h1 {
@@ -408,6 +409,9 @@
     font-size: 5rem;
   }
 }
+.home-section .home-left p {
+  line-height: 2.7rem;
+}
 @media (min-width: 992px) {
   .home-section .home-left p {
     font-size: 1.6rem;
@@ -417,6 +421,9 @@
   .home-section .home-left p {
     font-size: 1.8rem;
   }
+}
+.home-section .home-left p span {
+  font-weight: bold;
 }
 .home-section .home-left .home-left-connect {
   display: -webkit-box;
@@ -1196,8 +1203,6 @@
   background: transparent;
   width: 100%;
   overflow: hidden;
-  cursor: -webkit-grab;
-  cursor: grab;
   /* inner carousel */
   /* defaults carousel classes */
   /* container for the icon and its name */
@@ -1235,6 +1240,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.slider-container .rec-slider-container {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.slider-container .rec-slider-container:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 .slider-container .slider-image {
   display: -webkit-box;
@@ -1283,11 +1296,11 @@ body {
 
 .navlink {
   position: absolute;
-  top: -8rem;
+  top: -6rem;
 }
 
 .navlink-t2 {
-  top: -16rem;
+  top: -13rem;
 }
 
 a {

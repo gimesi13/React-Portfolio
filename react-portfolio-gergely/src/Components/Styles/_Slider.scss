@@ -20,7 +20,6 @@
   background: transparent;
   width: 100%;
   overflow: hidden;
-  cursor: grab;
 
   /* inner carousel */
   .slider {
@@ -40,6 +39,12 @@
   }
   .rec-carousel-item {
     @include flexCenter;
+  }
+  .rec-slider-container {
+    cursor: grab;
+  }
+  .rec-slider-container:active {
+    cursor: grabbing;
   }
 
   /* container for the icon and its name */

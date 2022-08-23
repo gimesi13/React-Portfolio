@@ -14,9 +14,9 @@ function Skills({ setLocation }) {
       >
         <h1>Skills</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-          possimus sequi facilis? Dignissimos aspernatur iusto laborum aperiam
-          obcaecati ipsa laboriosam?
+          Developing my skills is very important to me. Fortunately, I enjoy the
+          process and there is always sooooo much to learn in Web Development...
+          Here some technologies I'm already familiar with:
         </p>
         <Slider />
       </motion.div>

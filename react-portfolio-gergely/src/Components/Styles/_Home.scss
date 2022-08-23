@@ -83,6 +83,7 @@
     h1 {
       font-size: 3rem;
       margin: 0;
+      margin-top: 1rem;
       //desktop//
       @media (min-width: 992px) {
         font-size: 4rem;
@@ -94,12 +95,17 @@
     }
 
     p {
+      line-height: 2.7rem;
+
       @media (min-width: 992px) {
         font-size: 1.6rem;
       }
       //large//
       @media (min-width: 1200px) {
         font-size: 1.8rem;
+      }
+      span {
+        font-weight: bold;
       }
     }
 

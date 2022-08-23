@@ -15,22 +15,21 @@ const animatedElement = {
 
 function Home() {
   return (
-    <motion.section
-      className="banner home-section"
-      id="home"
-      initial={"offscreen"}
-      whileInView={"onscreen"}
-      viewport={{ once: false, amount: 0.3 }}
-      /* transition={{ staggerChildren: 1 }} */
-    >
+    <section className="banner home-section" id="home">
       <div className="home-left">
         <div className="home-left-welcome">Welcome to my Portfolio</div>
         <h1>Hi! I'm Gergely!</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum
-          sit nam labore sapiente commodi pariatur architecto? Explicabo nisi
-          ipsam totam? Consectetur aliquam accusamus sit assumenda quia. Eius,
-          rerum quo!
+          I'm a Fronted Developer and I build websites using React.js.<br></br>
+          Just kidding... I'm not a professional developer yet, but I spend most
+          of my free time building websites just like this one, or the ones you
+          can see in the
+          <span>
+            <a href="#projects"> Projects </a>
+          </span>
+          section. <br></br>
+          If you like my work, or you have anything to share with me about it.
+          Don't hesitate to contact me!
         </p>
         <a href="#contact">
           <div className="home-left-connect">
@@ -38,10 +37,16 @@ function Home() {
           </div>
         </a>
       </div>
-      <motion.div className="home-right" variants={animatedElement}>
+      <motion.div
+        className="home-right"
+        variants={animatedElement}
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: false, amount: 0.3 }}
+      >
         <img className="programmer-svg" src={programmer} alt="programmer" />
       </motion.div>
-    </motion.section>
+    </section>
   );
 }
 
