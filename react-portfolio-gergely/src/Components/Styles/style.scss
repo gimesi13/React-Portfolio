@@ -5,12 +5,16 @@
 @import "./Projects";
 @import "./Contact";
 @import "./Footer";
+@import "./Slider";
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

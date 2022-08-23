@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Slider from "./Slider";
 
 function Skills({ setLocation }) {
   return (
@@ -17,7 +18,7 @@ function Skills({ setLocation }) {
           possimus sequi facilis? Dignissimos aspernatur iusto laborum aperiam
           obcaecati ipsa laboriosam?
         </p>
-        <div className="slider">slider</div>
+        <Slider />
       </motion.div>
     </section>
   );

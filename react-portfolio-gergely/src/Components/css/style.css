@@ -560,11 +560,6 @@
   font-size: 1.5rem;
   text-align: center;
 }
-.skills .slider {
-  background: lightblue;
-  width: 100%;
-  height: 10rem;
-}
 
 /* MIXINS */
 /* VARIABLES */
@@ -1172,12 +1167,110 @@
   }
 }
 
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  width: 100%;
+  overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
+  /* inner carousel */
+  /* defaults carousel classes */
+  /* container for the icon and its name */
+}
+.slider-container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: transparent;
+  width: 100%;
+}
+.slider-container .rec-arrow {
+  color: black;
+  background: transparent;
+}
+.slider-container .rec-pagination {
+  display: none;
+}
+.slider-container .rec-carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider-container .slider-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20vw;
+}
+@media (min-width: 576px) {
+  .slider-container .slider-image {
+    font-size: 1000%;
+  }
+}
+.slider-container .slider-image .slider-image-name {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;

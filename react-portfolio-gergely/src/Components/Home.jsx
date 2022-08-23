@@ -3,9 +3,26 @@ import { motion } from "framer-motion";
 import programmer from "./Pictures/undraw_programming_re_kg9v.svg";
 import { BsArrowRightCircle } from "react-icons/bs";
 
+/* variants */
+const animatedElement = {
+  offscreen: { x: 100, opacity: 0 },
+  onscreen: {
+    x: 0,
+    transition: { type: "spring", bounce: 0.5, duration: 1 },
+    opacity: 1,
+  },
+};
+
 function Home() {
   return (
-    <section className="banner home-section" id="home">
+    <motion.section
+      className="banner home-section"
+      id="home"
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: false, amount: 0.3 }}
+      /* transition={{ staggerChildren: 1 }} */
+    >
       <div className="home-left">
         <div className="home-left-welcome">Welcome to my Portfolio</div>
         <h1>Hi! I'm Gergely!</h1>
@@ -21,10 +38,10 @@ function Home() {
           </div>
         </a>
       </div>
-      <div className="home-right">
+      <motion.div className="home-right" variants={animatedElement}>
         <img className="programmer-svg" src={programmer} alt="programmer" />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 

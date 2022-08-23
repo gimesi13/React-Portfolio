@@ -1,0 +1,60 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.slider-container {
+  @include flexCenter;
+  background: transparent;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+
+  /* inner carousel */
+  .slider {
+    @include flexCenter;
+    justify-content: flex-start;
+    background: transparent;
+    width: 100%;
+  }
+
+  /* defaults carousel classes */
+  .rec-arrow {
+    color: black;
+    background: transparent;
+  }
+  .rec-pagination {
+    display: none;
+  }
+  .rec-carousel-item {
+    @include flexCenter;
+  }
+
+  /* container for the icon and its name */
+  .slider-image {
+    @include flexCenter;
+    flex-direction: column;
+    font-size: 20vw;
+    //tablet//
+    @media (min-width: 576px) {
+      font-size: 1000%;
+    }
+
+    .slider-image-name {
+      padding-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
