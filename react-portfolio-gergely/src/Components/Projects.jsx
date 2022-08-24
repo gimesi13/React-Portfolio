@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import thinker from "./Pictures/undraw_code_thinking_re_gka2.svg";
 import { motion } from "framer-motion";
+import Project from "./Project";
 
 function Projects({ setLocation }) {
   //setting up states for the tab operators
@@ -41,12 +42,12 @@ function Projects({ setLocation }) {
       </div>
       {activeTab === "tab1" && (
         <div className="projects-grig tab-1">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
         </div>
       )}
 
