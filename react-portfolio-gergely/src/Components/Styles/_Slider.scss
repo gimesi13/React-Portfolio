@@ -58,6 +58,8 @@
     }
 
     .slider-image-name {
+      @include flexCenter;
+      text-align: center;
       padding-top: 1rem;
       font-size: 2rem;
     }

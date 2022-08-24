@@ -15,6 +15,14 @@
 } 
 */
 
+input,
+textarea,
+select,
+option {
+  color: #333;
+  font-family: "Open Sans";
+}
+
 .contact {
   position: relative;
   background: lightblue;
@@ -101,12 +109,16 @@
       font-size: 3rem;
     }
 
+    font-size: 2rem;
+
     .contact-right-name {
       @include flexCenter;
       width: 100%;
       gap: 1rem;
 
-      div {
+      input {
+        width: 100%;
+        font-size: 2rem;
         padding: 1rem;
         flex: 1;
         border-radius: 1rem;
@@ -118,7 +130,9 @@
       width: 100%;
       gap: 1rem;
 
-      div {
+      input {
+        width: 100%;
+        font-size: 2rem;
         padding: 1rem;
         flex: 1;
         border-radius: 1rem;
@@ -127,9 +141,12 @@
     }
 
     .contact-right-message {
+      @include flexCenter;
       width: 100%;
 
-      div {
+      textarea {
+        font-size: 2rem;
+        width: 100%;
         min-height: 20vh;
         padding: 0.5rem;
         border-radius: 1rem;
@@ -139,13 +156,17 @@
 
     .contact-right-send {
       @include flexCenter;
-      padding: 1rem;
-      padding-left: 4rem;
-      padding-right: 4rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      font-weight: bold;
-      border: 2px solid black;
+
+      .contact-right-send-input {
+        font-size: 2rem;
+        padding: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        border: 2px solid black;
+      }
     }
   }
 }

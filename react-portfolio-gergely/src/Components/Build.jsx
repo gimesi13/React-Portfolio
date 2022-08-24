@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-elastic-carousel";
 import {
   SiCss3,
@@ -30,15 +30,15 @@ const breakPoints = [
     itemsToShow: 1,
   },
   {
-    width: 400,
+    width: 300,
     itemsToShow: 2,
   },
   {
-    width: 768,
+    width: 500,
     itemsToShow: 3,
   },
   {
-    width: 992,
+    width: 700,
     itemsToShow: 4,
   },
   {
@@ -47,7 +47,7 @@ const breakPoints = [
   },
 ];
 
-function Slider() {
+function Build() {
   return (
     <div className="slider-container">
       <Carousel className="slider" breakPoints={breakPoints}>
@@ -66,4 +66,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default Build;

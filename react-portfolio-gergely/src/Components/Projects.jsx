@@ -20,6 +20,11 @@ function Projects({ setLocation }) {
     },
   };
 
+  const animateGrid = {
+    hidden: { x: "100%", display: "none" },
+    show: { x: 0, display: "grid" },
+  };
+
   return (
     <section className="banner projects">
       <div className="navlink" id="projects" />
@@ -51,57 +56,56 @@ function Projects({ setLocation }) {
           );
         })}
       </div>
+      {/* <motion.div className="projects-grids-container"> */}
       <AnimatePresence>
-        {activeTab === "tab1" && (
-          <motion.div
-            className="projects-grig tab-1"
-            initial={{ x: "100%", opacity: 0 }}
-            animate={{ x: 0, opacity: 1, display: "grid" }}
-          >
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {activeTab === "tab2" && (
-          <motion.div
-            className="projects-grig tab-2"
-            initial={{ x: "100%", opacity: 0 }}
-            animate={{ x: 0, opacity: 1, display: "grid" }}
-          >
-            <div className="thinker">
-              <img className="thinker-svg" src={thinker} alt="thinker" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              voluptatibus blanditiis nihil non, iste ipsam perferendis debitis
-              nulla! Quam, autem.
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {activeTab === "tab3" && (
         <motion.div
-          className="projects-grig tab-3"
-          initial={{ x: "100%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1, display: "grid" }}
+          className="projects-grig tab-1"
+          variants={animateGrid}
+          initial={false}
+          animate={activeTab === "tab1" ? "show" : "hidden"}
+        >
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+        </motion.div>
+      </AnimatePresence>
+
+      <AnimatePresence>
+        <motion.div
+          className="projects-grig tab-2"
+          variants={animateGrid}
+          initial={false}
+          animate={activeTab === "tab2" ? "show" : "hidden"}
         >
           <div className="thinker">
             <img className="thinker-svg" src={thinker} alt="thinker" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-            veritatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+            voluptatibus blanditiis nihil non, iste ipsam perferendis debitis
+            nulla! Quam, autem.
           </p>
         </motion.div>
-      )}
+      </AnimatePresence>
+
+      <motion.div
+        className="projects-grig tab-3"
+        variants={animateGrid}
+        initial={false}
+        animate={activeTab === "tab3" ? "show" : "hidden"}
+      >
+        <div className="thinker">
+          <img className="thinker-svg" src={thinker} alt="thinker" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+          veritatis.
+        </p>
+      </motion.div>
+      {/* </motion.div> */}
     </section>
   );
 }

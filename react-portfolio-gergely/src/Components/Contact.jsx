@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 import inbox from "./Pictures/undraw_mobile_inbox_re_ciwq.svg";
 
+/* variants */
 const animatedElement = {
   offscreen: { x: -100, opacity: 0 },
   onscreen: {
@@ -12,6 +14,29 @@ const animatedElement = {
 };
 
 function Contact() {
+  /* emailjs code*/
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_a0zsakn",
+        "template_l8p28wx",
+        form.current,
+        "g4PHWosCI3QMWwFrf"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="banner contact">
       <div className="navlink" id="contact" />
@@ -25,21 +50,28 @@ function Contact() {
       >
         <img className="inbox-svg" src={inbox} alt="inbox" />
       </motion.div>
-      <div className="contact-right">
+      <form ref={form} onSubmit={sendEmail} className="contact-right">
         <h1>Get In Touch</h1>
+
         <div className="contact-right-name">
-          <div>First Name</div>
-          <div>Last Name</div>
+          <input type="text" name="fistname" placeholder="First Name" />
+          <input type="text" name="lastname" placeholder="Last Name" />
         </div>
         <div className="contact-right-email-phone">
-          <div>Email Address</div>
-          <div>Phone No.</div>
+          <input type="email" name="email" placeholder="Email" />
+          <input type="tel" name="phone" placeholder="Phone No." />
         </div>
         <div className="contact-right-message">
-          <div>Message</div>
+          <textarea name="message" placeholder="Message" />
         </div>
-        <div className="contact-right-send">Send</div>
-      </div>
+        <div className="contact-right-send">
+          <input
+            className="contact-right-send-input"
+            type="submit"
+            value="Send"
+          />
+        </div>
+      </form>
     </section>
   );
 }

@@ -4,6 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsArrowUpCircleFill } from "react-icons/bs";
+import Build from "./Build";
 
 function Footer() {
   return (
@@ -15,7 +16,7 @@ function Footer() {
         className="footer-build-box"
       >
         <h1>This Website has been built with:</h1>
-        <div>slider</div>
+        <Build />
       </motion.div>
 
       <div className="footer-bottom-container">
