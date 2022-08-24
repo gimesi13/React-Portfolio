@@ -48,14 +48,14 @@
   }
 
   .tabs {
-    background: rgb(154, 231, 255);
-
     @include flexCenter;
     width: 80%;
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 1rem;
     border: 2px solid black;
+    overflow: hidden;
+    cursor: pointer;
 
     //tablet//
     @media (min-width: 576px) {
@@ -71,10 +71,22 @@
     //large//
     @media (min-width: 1200px) {
     }
-    div {
+    .tab {
+      z-index: 1;
+      position: relative;
+      background: lightblue;
+
       @include flexCenter;
       width: 100%;
       padding: 0.5rem;
+
+      .tab-background {
+        background: red;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -134,5 +146,9 @@
       flex-direction: row;
       width: 70%;
     }
+  }
+
+  .projects-grig {
+    display: none;
   }
 }
