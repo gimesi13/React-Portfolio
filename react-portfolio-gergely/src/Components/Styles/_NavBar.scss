@@ -16,7 +16,6 @@
 */
 
 .navbar {
-  background: lightblue;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -37,7 +36,6 @@
     height: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-    background: lightcoral;
     //tablet//
     @media (min-width: 576px) {
       padding-left: 2rem;
@@ -73,7 +71,6 @@
   .navbar-right {
     @include flexCenter;
     height: 100%;
-    background: lightpink;
     visibility: hidden;
     //laptop//
     @media (min-width: 768px) {
@@ -133,7 +130,7 @@
       width: 100%;
 
       .connect-button {
-        border: 2px solid black;
+        border: 2px solid white;
         padding: 0.5rem;
         white-space: nowrap;
       }
@@ -154,6 +151,7 @@
     div {
       @include flexCenter;
       .hamburger-icon {
+        color: white;
         font-size: 3rem;
       }
     }
@@ -170,7 +168,7 @@
     font-size: 5rem;
     padding: 1rem;
     gap: 2rem;
-    background: lightgreen;
+    background: black;
     @media (min-width: 768px) {
       visibility: hidden;
     }
@@ -178,6 +176,5 @@
 }
 
 .navbar.small {
-  background: lightblue;
   height: $navbarHeight - 2rem;
 }

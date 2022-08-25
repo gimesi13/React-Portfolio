@@ -3,7 +3,7 @@ import { motion, useAnimation, AnimatePresence, Variants } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { GrMenu } from "react-icons/gr";
+import { CgMenu, CgClose } from "react-icons/cg";
 import { GrClose } from "react-icons/gr";
 import hacker from "./Pictures/undraw_hacker_mind_-6-y85.svg";
 
@@ -49,11 +49,11 @@ function NavBar() {
   };
   useEffect(() => {
     if (navbar === true) {
-      shrink.set({ height: 128, background: "lightblue" });
-      shrink.start({ height: 96, background: "transparent" });
+      shrink.set({ height: 128, background: "transparent" });
+      shrink.start({ height: 96, background: "black" });
     } else {
-      grow.set({ height: 96, background: "transparent" });
-      grow.start({ height: 128, background: "lightblue" });
+      grow.set({ height: 96, background: "black" });
+      grow.start({ height: 128, background: "transparent" });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navbar]);
@@ -98,27 +98,27 @@ function NavBar() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <BsLinkedin className="social-icons linkedin" />
-            </div>
+            </motion.div>
           </a>
           <a
             href="https://www.facebook.com/gergely.gimesi"
             target={"_blank"}
             rel="noreferrer"
           >
-            <div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <BsFacebook className="social-icons facebook" />
-            </div>
+            </motion.div>
           </a>
           <a
             href="https://github.com/gimesi13/"
             target={"_blank"}
             rel="noreferrer"
           >
-            <div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <BsGithub className="social-icons github" />
-            </div>
+            </motion.div>
           </a>
         </div>
         <div className="connect-button-box">
@@ -131,11 +131,11 @@ function NavBar() {
       <div className="hamburger-box" onClick={HandleMenuClick}>
         {menuOpened ? (
           <motion.div animate={openMenu}>
-            <GrClose className="hamburger-icon hamburger-icon-close" />
+            <CgClose className="hamburger-icon hamburger-icon-close" />
           </motion.div>
         ) : (
           <motion.div animate={closeMenu}>
-            <GrMenu className="hamburger-icon" />
+            <CgMenu className="hamburger-icon" />
           </motion.div>
         )}
       </div>
@@ -153,6 +153,8 @@ function NavBar() {
                 onClick={HandleMenuClick}
                 key={item.href}
                 href={item.href}
+                whileHover={{ color: "rgb(6, 0, 61)" }}
+                whileTap={{ scale: 0.9 }}
               >
                 <div>{item.text}</div>
               </motion.a>

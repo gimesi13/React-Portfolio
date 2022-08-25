@@ -4,7 +4,44 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsArrowUpCircleFill } from "react-icons/bs";
-import Build from "./Build";
+import Slider from "./Slider";
+import { SiSass, SiReact, SiFramer } from "react-icons/si";
+import { MdDraw } from "react-icons/md";
+
+//images array
+const images = [
+  { img: <SiReact />, name: "React.js" },
+  { img: <SiSass />, name: "Sass" },
+  { img: <SiFramer />, name: "Framer Motion" },
+  {
+    img: <MdDraw />,
+    name: "unDraw",
+  },
+];
+
+//breakpoints for the carousel slider
+const breakPoints = [
+  {
+    width: 1,
+    itemsToShow: 1,
+  },
+  {
+    width: 300,
+    itemsToShow: 2,
+  },
+  {
+    width: 500,
+    itemsToShow: 3,
+  },
+  {
+    width: 700,
+    itemsToShow: 4,
+  },
+  {
+    width: 900,
+    itemsToShow: 5,
+  },
+];
 
 function Footer() {
   return (
@@ -16,7 +53,7 @@ function Footer() {
         className="footer-build-box"
       >
         <h1>This Website has been built with:</h1>
-        <Build />
+        <Slider images={images} breakPoints={breakPoints} />
       </motion.div>
 
       <div className="footer-bottom-container">

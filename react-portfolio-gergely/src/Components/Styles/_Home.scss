@@ -16,6 +16,8 @@
 */
 
 .home-section {
+  background: url("../Pictures/13107749_5137894.jpg");
+
   @include flexCenter;
   flex-direction: column;
   padding-top: $navbarHeight + 1rem;
@@ -51,11 +53,8 @@
     padding-left: 2rem;
   }
 
-  background: lightgreen;
-
   /*//// LEFT SECTION ////*/
   .home-left {
-    background: lightcoral;
     @include flexCenter;
     flex-direction: column;
     align-items: flex-start;
@@ -65,7 +64,14 @@
     margin: 1rem;
 
     .home-left-welcome {
-      border: 2px solid black;
+      border: 1px solid white;
+      background: rgb(110, 97, 53);
+      background: linear-gradient(
+        19deg,
+        rgba(110, 97, 53, 1) 2%,
+        rgba(20, 20, 20, 1) 42%
+      );
+
       padding: 0.5rem;
       font-weight: bold;
       //desktop//
@@ -138,7 +144,6 @@
 
   /*//// RIGHT SECTION ////*/
   .home-right {
-    background: lightblue;
     @include flexCenter;
     height: 100%;
     width: 100%;

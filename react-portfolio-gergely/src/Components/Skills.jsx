@@ -1,6 +1,52 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Slider from "./Slider";
+import {
+  SiCss3,
+  SiSass,
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiFramer,
+  SiJquery,
+  SiTailwindcss,
+} from "react-icons/si";
+
+//images array
+const images = [
+  { img: <SiReact />, name: "React.js" },
+  { img: <SiJavascript />, name: "Javascript" },
+  { img: <SiCss3 />, name: "CSS3" },
+  { img: <SiSass />, name: "Sass" },
+  { img: <SiTailwindcss />, name: "Tailwind CSS" },
+  { img: <SiHtml5 />, name: "HTML5" },
+  { img: <SiFramer />, name: "Framer Motion" },
+  { img: <SiJquery />, name: "Jquery" },
+];
+
+//breakpoints for the carousel slider
+const breakPoints = [
+  {
+    width: 1,
+    itemsToShow: 1,
+  },
+  {
+    width: 400,
+    itemsToShow: 2,
+  },
+  {
+    width: 768,
+    itemsToShow: 3,
+  },
+  {
+    width: 992,
+    itemsToShow: 4,
+  },
+  {
+    width: 1200,
+    itemsToShow: 5,
+  },
+];
 
 function Skills() {
   return (
@@ -18,7 +64,7 @@ function Skills() {
           process and there is always sooooo much to learn in Web Development...
           Here some technologies I'm already familiar with:
         </p>
-        <Slider />
+        <Slider images={images} breakPoints={breakPoints} />
       </motion.div>
     </section>
   );

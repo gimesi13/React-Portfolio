@@ -16,13 +16,18 @@
 */
 
 .footer-section {
-  background: rgb(238, 238, 142);
-
+  background: rgb(89, 79, 45);
+  background: linear-gradient(
+    211deg,
+    rgba(89, 79, 45, 1) 2%,
+    rgba(20, 20, 20, 1) 29%,
+    rgba(0, 0, 0, 1) 79%,
+    rgba(215, 190, 105, 1) 100%
+  );
   /* UPPER BOX */
   .footer-build-box {
-    /* for now */
-    background: lightpink;
-    /* for now */
+    background: rgb(236, 236, 236);
+    color: black;
     @include flexCenter;
     flex-direction: column;
     margin: 2rem;
@@ -63,12 +68,17 @@
       padding-right: 10vw;
     }
     h1 {
+      text-align: center;
       font-size: 3rem;
       margin: 0;
+      margin-bottom: 2rem;
+      //desktop//
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+      }
     }
 
     div {
-      background: lightblue;
       width: 100%;
       height: 10rem;
     }
@@ -78,7 +88,6 @@
   .footer-bottom-container {
     @include flexCenter;
     justify-content: space-between;
-    background: lightgreen;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 1rem;
@@ -99,13 +108,11 @@
     }
     /* RIGHT SECTION */
     .footer-bottom-right {
-      background: lightblue;
       @include flexCenter;
       flex-direction: column;
       align-items: flex-end;
 
       .soc-icons-footer {
-        background: lightpink;
         @include flexCenter;
         justify-content: flex-end;
         height: 100%;

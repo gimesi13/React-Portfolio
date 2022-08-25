@@ -23,7 +23,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   gap: 2rem;
-  background: lightgreen;
+  background: black;
 
   h1 {
     font-size: 3rem;
@@ -53,7 +53,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 1rem;
-    border: 2px solid black;
+    border: 3px solid rgb(67, 67, 67);
     overflow: hidden;
     cursor: pointer;
 
@@ -74,14 +74,19 @@
     .tab {
       z-index: 1;
       position: relative;
-      background: lightblue;
+      background: rgb(40, 40, 40);
 
       @include flexCenter;
       width: 100%;
       padding: 0.5rem;
 
       .tab-background {
-        background: red;
+        background: rgb(215, 190, 105);
+        background: radial-gradient(
+          circle,
+          rgba(215, 190, 105, 1) 8%,
+          rgba(116, 102, 56, 1) 100%
+        );
         z-index: -1;
         position: absolute;
         width: 100%;
@@ -91,8 +96,6 @@
   }
 
   .tab-1 {
-    background: rgb(255, 165, 232);
-
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
@@ -116,7 +119,7 @@
   }
   .tab-2,
   .tab-3 {
-    background: rgb(255, 165, 232);
+    background: rgb(40, 40, 40);
 
     @include flexCenter;
     flex-direction: column;

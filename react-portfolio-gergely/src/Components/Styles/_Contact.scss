@@ -15,17 +15,15 @@
 } 
 */
 
-input,
-textarea,
-select,
-option {
-  color: #333;
-  font-family: "Open Sans";
-}
-
 .contact {
   position: relative;
-  background: lightblue;
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    309deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(89, 79, 45, 1) 50%,
+    rgba(215, 190, 105, 1) 100%
+  );
   @include flexCenter;
   flex-direction: column;
   justify-content: space-between;
@@ -60,7 +58,6 @@ option {
 
   /* LEFT SECTION */
   .contact-left {
-    background: rgb(173, 230, 173);
     @include flexCenter;
     height: 100%;
     width: 100%;
@@ -84,7 +81,6 @@ option {
 
   /* RIGHT SECTION */
   .contact-right {
-    background: lightcoral;
     @include flexCenter;
     flex-direction: column;
     align-items: flex-start;
@@ -117,12 +113,17 @@ option {
       gap: 1rem;
 
       input {
+        background: rgba(255, 255, 255, 0.139);
         width: 100%;
         font-size: 2rem;
         padding: 1rem;
         flex: 1;
         border-radius: 1rem;
-        border: 2px solid black;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+      }
+      input::placeholder {
+        color: white;
       }
     }
     .contact-right-email-phone {
@@ -131,12 +132,17 @@ option {
       gap: 1rem;
 
       input {
+        background: rgba(255, 255, 255, 0.139);
         width: 100%;
         font-size: 2rem;
         padding: 1rem;
         flex: 1;
         border-radius: 1rem;
-        border: 2px solid black;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+      }
+      input::placeholder {
+        color: white;
       }
     }
 
@@ -145,12 +151,17 @@ option {
       width: 100%;
 
       textarea {
+        background: rgba(255, 255, 255, 0.139);
         font-size: 2rem;
         width: 100%;
         min-height: 20vh;
         padding: 0.5rem;
         border-radius: 1rem;
-        border: 2px solid black;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+      }
+      textarea::placeholder {
+        color: white;
       }
     }
 
@@ -158,6 +169,7 @@ option {
       @include flexCenter;
 
       .contact-right-send-input {
+        cursor: pointer;
         font-size: 2rem;
         padding: 1rem;
         padding-left: 4rem;

@@ -16,13 +16,18 @@
 */
 
 .skills-section {
-  background: rgb(238, 238, 142);
+  background: rgb(110, 97, 53);
+  background: linear-gradient(
+    19deg,
+    rgba(110, 97, 53, 1) 2%,
+    rgba(20, 20, 20, 1) 42%
+  );
   position: relative;
 }
 
 .skills {
   /* for now */
-  background: lightpink;
+  background: rgb(40, 40, 40);
   /* for now */
   @include flexCenter;
   flex-direction: column;
