@@ -58,21 +58,34 @@ function Footer() {
 
       <div className="footer-bottom-container">
         <div className="footer-bottom-left">
-          <a href="#home">
+          <motion.a
+            href="#home"
+            whileHover={{ y: -10 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <BsArrowUpCircleFill className="up-arrow-svg" />
-          </a>
+          </motion.a>
         </div>
         <div className="footer-bottom-right">
           <div className="soc-icons-footer">
-            <div>
+            <motion.div
+              whileHover={{ y: -5, cursor: "pointer" }}
+              whileTap={{ scale: 0.9 }}
+            >
               <BsLinkedin className="social-icons" />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              whileHover={{ y: -5, cursor: "pointer" }}
+              whileTap={{ scale: 0.9 }}
+            >
               <BsFacebook className="social-icons" />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              whileHover={{ y: -5, cursor: "pointer" }}
+              whileTap={{ scale: 0.9 }}
+            >
               <BsGithub className="social-icons" />
-            </div>
+            </motion.div>
           </div>
           <div>Created By Gergely Gimesi on 2022.</div>
         </div>

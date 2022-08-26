@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import programmer from "./Pictures/undraw_programming_re_kg9v.svg";
+import programmer from "./Pictures/undraw_feeling_proud_qne1.svg";
 import { BsArrowRightCircle } from "react-icons/bs";
 
 /* variants */
@@ -17,10 +17,14 @@ function Home() {
   return (
     <section className="banner home-section" id="home">
       <div className="home-left">
-        <div className="home-left-welcome">Welcome to my Portfolio</div>
+        <div className="home-left-welcome-wrapper">
+          <div className="home-left-welcome">Welcome to my Portfolio</div>
+        </div>
+
         <h1>Hi! I'm Gergely!</h1>
         <p>
-          I'm a Fronted Developer and I build websites using React.js.<br></br>
+          I'm a Fronted Developer and I build web applications for living using
+          React.js.<br></br>
           Just kidding... I'm not a professional developer yet, but I spend most
           of my free time building websites just like this one, or the ones you
           can see in the
@@ -32,9 +36,13 @@ function Home() {
           Don't hesitate to contact me!
         </p>
         <a href="#contact">
-          <div className="home-left-connect">
+          <motion.div
+            className="home-left-connect"
+            whileHover={{ x: 10 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Lets Connect <BsArrowRightCircle className="right-arrow-svg" />
-          </div>
+          </motion.div>
         </a>
       </div>
       <motion.div

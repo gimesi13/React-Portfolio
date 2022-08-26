@@ -4,8 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { CgMenu, CgClose } from "react-icons/cg";
-import { GrClose } from "react-icons/gr";
-import hacker from "./Pictures/undraw_hacker_mind_-6-y85.svg";
+import hacker from "./Pictures/undraw_cloud_files_wmo8.svg";
 
 function NavBar() {
   /* STATES */
@@ -41,7 +40,7 @@ function NavBar() {
   /* still performance issues */
   // navbar on scroll behavior //bad for performance, need to work on it
   const handleNavBarScroll = () => {
-    if (window.scrollY >= 128) {
+    if (window.scrollY >= 1) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -49,11 +48,11 @@ function NavBar() {
   };
   useEffect(() => {
     if (navbar === true) {
-      shrink.set({ height: 128, background: "transparent" });
-      shrink.start({ height: 96, background: "black" });
+      shrink.set({ height: 128, backgroundColor: "transparent" });
+      shrink.start({ height: 96, backgroundColor: "black" });
     } else {
-      grow.set({ height: 96, background: "black" });
-      grow.start({ height: 128, background: "transparent" });
+      grow.set({ height: 96, backgroundColor: "black" });
+      grow.start({ height: 128, backgroundColor: "transparent" });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navbar]);
@@ -83,13 +82,19 @@ function NavBar() {
       <div className="navbar-right">
         <div className="routers">
           <a href="#home">
-            <div>Home</div>
+            <motion.div whileHover={{ y: 6 }} whileTap={{ scale: 0.9 }}>
+              Home
+            </motion.div>
           </a>
           <a href="#skills">
-            <div>Skills</div>
+            <motion.div whileHover={{ y: 6 }} whileTap={{ scale: 0.9 }}>
+              Skills
+            </motion.div>
           </a>
           <a href="#projects">
-            <div>Projects</div>
+            <motion.div whileHover={{ y: 6 }} whileTap={{ scale: 0.9 }}>
+              Projects
+            </motion.div>
           </a>
         </div>
         <div className="soc-icons">
@@ -98,7 +103,7 @@ function NavBar() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.div whileHover={{ y: 6 }} whileTap={{ scale: 0.9 }}>
               <BsLinkedin className="social-icons linkedin" />
             </motion.div>
           </a>
@@ -107,7 +112,7 @@ function NavBar() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.div whileHover={{ y: 6 }} whileTap={{ scale: 0.9 }}>
               <BsFacebook className="social-icons facebook" />
             </motion.div>
           </a>
@@ -116,14 +121,20 @@ function NavBar() {
             target={"_blank"}
             rel="noreferrer"
           >
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.div whileHover={{ y: 6 }} whileTap={{ scale: 0.9 }}>
               <BsGithub className="social-icons github" />
             </motion.div>
           </a>
         </div>
         <div className="connect-button-box">
           <a href="#contact">
-            <div className="connect-button">Let's Connect</div>
+            <motion.div
+              className="connect-button"
+              whileHover={{ borderRadius: 50 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Let's Connect
+            </motion.div>
           </a>
         </div>
       </div>
@@ -153,7 +164,6 @@ function NavBar() {
                 onClick={HandleMenuClick}
                 key={item.href}
                 href={item.href}
-                whileHover={{ color: "rgb(6, 0, 61)" }}
                 whileTap={{ scale: 0.9 }}
               >
                 <div>{item.text}</div>

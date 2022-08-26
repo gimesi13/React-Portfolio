@@ -27,8 +27,10 @@
   @include flexCenter;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   gap: 1rem;
   font-size: 1.5rem;
 
@@ -124,6 +126,7 @@
       }
       input::placeholder {
         color: white;
+        font-size: 1.5rem;
       }
     }
     .contact-right-email-phone {
@@ -143,6 +146,7 @@
       }
       input::placeholder {
         color: white;
+        font-size: 1.5rem;
       }
     }
 
@@ -162,6 +166,7 @@
       }
       textarea::placeholder {
         color: white;
+        font-size: 1.5rem;
       }
     }
 
@@ -170,7 +175,7 @@
 
       .contact-right-send-input {
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem;
         padding-left: 4rem;
         padding-right: 4rem;

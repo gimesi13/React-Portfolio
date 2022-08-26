@@ -65,10 +65,12 @@ function Contact() {
           <textarea name="message" placeholder="Message" />
         </div>
         <div className="contact-right-send">
-          <input
+          <motion.input
             className="contact-right-send-input"
             type="submit"
             value="Send"
+            whileHover={{ x: 10 }}
+            whileTap={{ scale: 0.9 }}
           />
         </div>
       </form>

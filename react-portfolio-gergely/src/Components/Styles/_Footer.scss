@@ -103,7 +103,12 @@
       @include flexCenter;
 
       .up-arrow-svg {
-        font-size: 5rem;
+        font-size: 4rem;
+        margin-left: 1rem;
+        @media (min-width: 576px) {
+          margin-left: 0;
+          font-size: 5rem;
+        }
       }
     }
     /* RIGHT SECTION */
@@ -129,6 +134,7 @@
         }
       }
       div {
+        text-align: right;
         font-size: 1.2rem;
         //tablet//
         @media (min-width: 576px) {

@@ -61,8 +61,7 @@
       @include flexCenter;
 
       .hacker-svg {
-        width: $navbarHeight;
-        //desktop//
+        width: 5.9rem;
       }
     }
   }
@@ -131,7 +130,7 @@
 
       .connect-button {
         border: 2px solid white;
-        padding: 0.5rem;
+        padding: 1rem;
         white-space: nowrap;
       }
     }
@@ -168,9 +167,15 @@
     font-size: 5rem;
     padding: 1rem;
     gap: 2rem;
-    background: black;
+    background: rgb(30, 30, 30);
     @media (min-width: 768px) {
       visibility: hidden;
+    }
+    div {
+      transition: color 0.3s;
+    }
+    div:hover {
+      color: rgba(215, 190, 105, 1);
     }
   }
 }
