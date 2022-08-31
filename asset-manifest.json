@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/github.io/React-Portfolio/static/css/main.e84793fe.css",
+    "main.js": "/github.io/React-Portfolio/static/js/main.f3cc269e.js",
+    "static/media/13107749_5137894.webp": "/github.io/React-Portfolio/static/media/13107749_5137894.6958d44db1a6580e9ea5.webp",
+    "static/media/undraw_feeling_proud_qne1.svg": "/github.io/React-Portfolio/static/media/undraw_feeling_proud_qne1.d407b7f2c4341b89ec648b5f251ce0b0.svg",
+    "static/media/undraw_mobile_inbox_re_ciwq.svg": "/github.io/React-Portfolio/static/media/undraw_mobile_inbox_re_ciwq.8081f0dbd0dedb6a30ff3d3f3dd8b2ff.svg",
+    "static/media/undraw_code_thinking_re_gka2.svg": "/github.io/React-Portfolio/static/media/undraw_code_thinking_re_gka2.bf0d8bc04129b08fade16ba86b8ff346.svg",
+    "static/media/undraw_cloud_files_wmo8.svg": "/github.io/React-Portfolio/static/media/undraw_cloud_files_wmo8.1b2dee1b678842840c328493ea7e0afc.svg",
+    "index.html": "/github.io/React-Portfolio/index.html",
+    "main.e84793fe.css.map": "/github.io/React-Portfolio/static/css/main.e84793fe.css.map",
+    "main.f3cc269e.js.map": "/github.io/React-Portfolio/static/js/main.f3cc269e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e84793fe.css",
+    "static/js/main.f3cc269e.js"
+  ]
+}
