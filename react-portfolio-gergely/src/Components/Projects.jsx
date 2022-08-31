@@ -16,6 +16,7 @@ const projects = {
     tech: "RESTful API, React, CSS ",
     link: "https://630f24bd5d2985782545567d--brilliant-semolina-fe6b3a.netlify.app/",
     thumbnail: dailyImg,
+    github: "",
   },
   project2: {
     name: "React Todo",

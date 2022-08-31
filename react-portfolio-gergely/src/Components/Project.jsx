@@ -30,6 +30,17 @@ function Project({ project }) {
       <motion.div className="project-wrapper" variants={animateWrapper}>
         <motion.h1 variants={animateText}>{project.name}</motion.h1>
         <motion.p variants={animateText}>{project.description}</motion.p>
+        <div>
+          <a
+            className="live-link"
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            live link
+          </a>
+          <a /* href={""} */>check on github</a>
+        </div>
       </motion.div>
     </motion.div>
   );
