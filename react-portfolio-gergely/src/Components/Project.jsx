@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function Project() {
+function Project({ project }) {
   const animateWrapper = {
     hidden: {
       clipPath: "circle(0% at 50% -10%)",
@@ -25,10 +25,11 @@ function Project() {
 
   return (
     <motion.div className="project" initial="hidden" whileHover="show">
-      Project image
+      <img className="project-thumbnail" src={project.thumbnail} alt="" />
+
       <motion.div className="project-wrapper" variants={animateWrapper}>
-        <motion.h1 variants={animateText}>Hostel Website</motion.h1>
-        <motion.p variants={animateText}>Design and Development</motion.p>
+        <motion.h1 variants={animateText}>{project.name}</motion.h1>
+        <motion.p variants={animateText}>{project.description}</motion.p>
       </motion.div>
     </motion.div>
   );

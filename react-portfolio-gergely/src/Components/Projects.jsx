@@ -2,8 +2,20 @@ import React, { useState } from "react";
 import thinker from "./Pictures/undraw_code_thinking_re_gka2.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import Project from "./Project";
+import dailyImg from "./Pictures/daily-quotes-image.PNG";
 
-function Projects({ setLocation }) {
+const projects = {
+  project1: {
+    name: "Daily Quotes",
+    description:
+      "react-app that can generate random wisdoms fetched from an API; stores information about them in a searchable library and in local storage",
+    tech: "RESTful API, React, CSS ",
+    link: "https://630f24bd5d2985782545567d--brilliant-semolina-fe6b3a.netlify.app/",
+    thumbnail: dailyImg,
+  },
+  project2: { name: "React Todo", description: "todo list", tech: "React" },
+};
+function Projects() {
   //setting up states for the tab operators
   const [activeTab, setActiveTab] = useState("tab1");
 
@@ -64,12 +76,12 @@ function Projects({ setLocation }) {
           initial={false}
           animate={activeTab === "tab1" ? "show" : "hidden"}
         >
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+          <Project project={projects.project1} />
+          <Project project={{ projects }} />
+          <Project project={{ projects }} />
+          <Project project={{ projects }} />
+          <Project project={{ projects }} />
+          <Project project={{ projects }} />
         </motion.div>
       </AnimatePresence>
 
