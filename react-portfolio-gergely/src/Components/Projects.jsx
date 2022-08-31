@@ -3,17 +3,48 @@ import thinker from "./Pictures/undraw_code_thinking_re_gka2.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import Project from "./Project";
 import dailyImg from "./Pictures/daily-quotes-image.PNG";
+import todoImg from "./Pictures/react-todo-image.PNG";
+import framerImg from "./Pictures/framer-motion-image.PNG";
+import tailwindImg from "./Pictures/tailwind-image.PNG";
+import ghmJsImg from "./Pictures/ghm-js-image.PNG";
 
 const projects = {
   project1: {
     name: "Daily Quotes",
     description:
-      "react-app that can generate random wisdoms fetched from an API; stores information about them in a searchable library and in local storage",
+      "React App that can generate random wisdoms fetched from an API; stores information about them in a searchable library and in local storage",
     tech: "RESTful API, React, CSS ",
     link: "https://630f24bd5d2985782545567d--brilliant-semolina-fe6b3a.netlify.app/",
     thumbnail: dailyImg,
   },
-  project2: { name: "React Todo", description: "todo list", tech: "React" },
+  project2: {
+    name: "React Todo",
+    description: "Todo List with local storage built with React",
+    tech: " React, CSS ",
+    link: "https://630f46dba4f93a128ec222d8--whimsical-cascaron-343463.netlify.app/",
+    thumbnail: todoImg,
+  },
+  project3: {
+    name: "Framer Motion",
+    description: "Some basic Framer Motion animations in a simle project",
+    tech: " React, CSS, Framer Motion ",
+    link: "https://630f4991a273c6006e1ffa19--neon-dusk-d9a33c.netlify.app/",
+    thumbnail: framerImg,
+  },
+  project4: {
+    name: "Tailwind CSS",
+    description: "Homepage built with Tailwind and React",
+    tech: " React, Tailwind.css, Typed",
+    link: "https://630f4e1ef2160c0058fda2cf--magical-kangaroo-e27e00.netlify.app/",
+    thumbnail: tailwindImg,
+  },
+  project5: {
+    name: "Hostel Website Vanilla Javascript",
+    description: "One page website for a ski-hostel",
+    tech: "Javascript, Jquery, HTML, CSS",
+    link: "https://630f4fcb1146540082c5b2bf--transcendent-kringle-11b49f.netlify.app/",
+    thumbnail: ghmJsImg,
+  },
 };
 function Projects() {
   //setting up states for the tab operators
@@ -77,11 +108,12 @@ function Projects() {
           animate={activeTab === "tab1" ? "show" : "hidden"}
         >
           <Project project={projects.project1} />
-          <Project project={{ projects }} />
-          <Project project={{ projects }} />
-          <Project project={{ projects }} />
-          <Project project={{ projects }} />
-          <Project project={{ projects }} />
+          <Project project={projects.project2} />
+          <Project project={projects.project3} />
+          <Project project={projects.project4} />
+          <Project project={projects.project5} />
+          {/*
+          <Project project={projects.project6} /> */}
         </motion.div>
       </AnimatePresence>
 
