@@ -25,9 +25,9 @@ function Home() {
         <p>
           I'm a Fronted Developer and I build web applications for living using
           React.js.<br></br>
-          Just kidding... I'm not a professional developer yet, but I spend most
-          of my free time building websites just like this one, or the ones you
-          can see in the
+          Well, not exactly... I'm not a professional developer yet, but I spend
+          most of my free time building websites just like this one, or the ones
+          you can see in the
           <span>
             <a href="#projects"> Projects </a>
           </span>
