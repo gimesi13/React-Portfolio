@@ -158,13 +158,17 @@
 
   /* HAMBURGER MENU */
   .hamburger-box {
-    z-index: 10;
+    z-index: 15;
     @include flexCenter;
-    position: fixed;
-    right: 2rem;
-    top: 2rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
     cursor: pointer;
     visibility: visible;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
     //tablet//
     @media (min-width: 768px) {
       visibility: hidden;
@@ -190,9 +194,14 @@
     left: 0;
     font-size: 5rem;
     padding: 1rem;
-    padding-top: $navbarHeight;
+    padding-top: $navbarHeight - 4rem;
     background: rgb(30, 30, 30);
     visibility: visible;
+
+    @media (max-height: 540px) {
+      font-size: 3rem;
+      padding: 0;
+    }
 
     @media (min-width: 768px) {
       visibility: hidden;
@@ -201,7 +210,7 @@
       transition: color 0.3s;
     }
     div:hover {
-      color: rgb(162, 47, 219);
+      color: rgb(255, 255, 255);
     }
   }
 }

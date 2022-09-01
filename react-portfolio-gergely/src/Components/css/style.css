@@ -229,7 +229,7 @@
   transition: color 0.3s;
 }
 .navbar .hamburger-box {
-  z-index: 10;
+  z-index: 15;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,11 +239,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  right: 2rem;
-  top: 2rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
   cursor: pointer;
   visibility: visible;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 @media (min-width: 768px) {
   .navbar .hamburger-box {
@@ -290,9 +295,15 @@
   left: 0;
   font-size: 5rem;
   padding: 1rem;
-  padding-top: 8rem;
+  padding-top: 4rem;
   background: rgb(30, 30, 30);
   visibility: visible;
+}
+@media (max-height: 540px) {
+  .navbar .dropdown-menu {
+    font-size: 3rem;
+    padding: 0;
+  }
 }
 @media (min-width: 768px) {
   .navbar .dropdown-menu {
@@ -304,7 +315,7 @@
   transition: color 0.3s;
 }
 .navbar .dropdown-menu div:hover {
-  color: rgb(162, 47, 219);
+  color: rgb(255, 255, 255);
 }
 
 .navbar.small {
@@ -347,7 +358,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 9rem;
+  padding-top: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
   padding-bottom: 7rem;
@@ -365,6 +376,7 @@
 }
 @media (min-width: 768px) {
   .home-section {
+    padding-top: 9rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1190,6 +1202,7 @@
 } 
 */
 .footer-section {
+  color: rgb(219, 219, 219);
   background: rgb(0, 0, 0);
   background: linear-gradient(36deg, rgb(0, 0, 0) 11%, rgb(26, 68, 159) 62%, rgb(222, 110, 255) 98%);
   /* UPPER BOX */
@@ -1296,6 +1309,11 @@
     padding-left: 4vw;
     padding-right: 4vw;
   }
+}
+.footer-section .footer-bottom-container a:hover {
+  color: white;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .footer-section .footer-bottom-container .footer-bottom-left {
   display: -webkit-box;

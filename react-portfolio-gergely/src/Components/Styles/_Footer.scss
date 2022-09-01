@@ -16,6 +16,7 @@
 */
 
 .footer-section {
+  color: rgb(219, 219, 219);
   background: rgb(0, 0, 0);
   background: linear-gradient(
     36deg,
@@ -95,6 +96,11 @@
     @media (min-width: 576px) {
       padding-left: 4vw;
       padding-right: 4vw;
+    }
+
+    a:hover {
+      color: white;
+      transition: color 0.3s;
     }
 
     /* LEFT SECTION */

@@ -23,7 +23,7 @@
 
   @include flexCenter;
   flex-direction: column;
-  padding-top: $navbarHeight + 1rem;
+  padding-top: $navbarHeight - 3rem;
   padding-right: 2rem;
   padding-left: 2rem;
   padding-bottom: 7rem;
@@ -37,6 +37,7 @@
   }
   //laptop//
   @media (min-width: 768px) {
+    padding-top: $navbarHeight + 1rem;
     flex-direction: row;
     gap: 0;
     padding-right: 2rem;
