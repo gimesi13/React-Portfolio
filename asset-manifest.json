@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.62e5e807.css",
-    "main.js": "/React-Portfolio/static/js/main.d46c0f55.js",
+    "main.css": "/React-Portfolio/static/css/main.e1e2fc15.css",
+    "main.js": "/React-Portfolio/static/js/main.e6ad3dab.js",
     "static/media/ghm-js-image.PNG": "/React-Portfolio/static/media/ghm-js-image.ee73e47d8217c909463a.PNG",
     "static/media/daily-quotes-image.PNG": "/React-Portfolio/static/media/daily-quotes-image.1e8883953c2134053929.PNG",
     "static/media/react-todo-image.PNG": "/React-Portfolio/static/media/react-todo-image.1f7bd0799e0ae4681475.PNG",
@@ -12,11 +12,11 @@
     "static/media/undraw_envelope_re_f5j4.svg": "/React-Portfolio/static/media/undraw_envelope_re_f5j4.360529cf65d49a392582e2e591d17ae9.svg",
     "static/media/undraw_code_thinking_re_gka2.svg": "/React-Portfolio/static/media/undraw_code_thinking_re_gka2.4d0c894df83c9f4d52b775f17961f2bd.svg",
     "index.html": "/React-Portfolio/index.html",
-    "main.62e5e807.css.map": "/React-Portfolio/static/css/main.62e5e807.css.map",
-    "main.d46c0f55.js.map": "/React-Portfolio/static/js/main.d46c0f55.js.map"
+    "main.e1e2fc15.css.map": "/React-Portfolio/static/css/main.e1e2fc15.css.map",
+    "main.e6ad3dab.js.map": "/React-Portfolio/static/js/main.e6ad3dab.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e5e807.css",
-    "static/js/main.d46c0f55.js"
+    "static/css/main.e1e2fc15.css",
+    "static/js/main.e6ad3dab.js"
   ]
 }
