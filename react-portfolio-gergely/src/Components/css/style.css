@@ -34,10 +34,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  visibility: hidden;
   /* LEFT SECTION */
   /* no logo yet */
   /* RIGHT SECTION */
   /* HAMBURGER MENU */
+}
+@media (min-width: 768px) {
+  .navbar {
+    visibility: visible;
+  }
 }
 @media (min-width: 1200px) {
   .navbar {
@@ -233,9 +239,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   right: 2rem;
+  top: 2rem;
   cursor: pointer;
+  visibility: visible;
 }
 @media (min-width: 768px) {
   .navbar .hamburger-box {
@@ -258,7 +266,7 @@
   font-size: 3rem;
 }
 .navbar .dropdown-menu {
-  z-index: -10;
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +290,9 @@
   left: 0;
   font-size: 5rem;
   padding: 1rem;
+  padding-top: 8rem;
   background: rgb(30, 30, 30);
+  visibility: visible;
 }
 @media (min-width: 768px) {
   .navbar .dropdown-menu {
@@ -1622,6 +1632,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: rgb(255, 255, 255);
   background: black;
+}
+
+.fixed_body {
+  overflow: hidden;
+  block-size: 100%;
 }
 
 .App {

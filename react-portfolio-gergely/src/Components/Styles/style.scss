@@ -27,6 +27,11 @@ body {
   background: black;
 }
 
+.fixed_body {
+  overflow: hidden;
+  block-size: 100%;
+}
+
 .App {
   width: 100%;
 }

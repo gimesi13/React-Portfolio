@@ -61,12 +61,12 @@ function NavBar() {
 
   const dropdownVariant = {
     hidden: {
-      zIndex: -10,
+      pointerEvents: "none",
       clipPath: "circle(0% at 100% 0%)",
       transition: { delay: 0.3, duration: 0.5, staggerChildren: 0.05 },
     },
     show: {
-      zIndex: 10,
+      pointerEvents: "auto",
       clipPath: "circle(132.7% at 94% 6%)",
       transition: { duration: 0.5, delayChildren: 0.25, staggerChildren: 0.18 },
     },
@@ -74,12 +74,10 @@ function NavBar() {
 
   const animateText = {
     hidden: {
-      zIndex: -10,
       opacity: 0,
       y: 20,
     },
     show: {
-      zIndex: 10,
       opacity: 1,
       y: 0,
     },

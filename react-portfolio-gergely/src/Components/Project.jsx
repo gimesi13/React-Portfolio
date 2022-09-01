@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { GoLogoGithub } from "react-icons/go";
 import { HiCode } from "react-icons/hi";
 
 function Project({ project }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   const animateWrapper = {
     hidden: {
       clipPath: "circle(0% at 50% -10%)",
@@ -26,7 +28,20 @@ function Project({ project }) {
   };
 
   return (
-    <motion.div className="project" initial="hidden" whileHover="show">
+    <motion.div
+      className="project"
+      initial="hidden"
+      animate={isOpen ? "show" : "hidden"}
+      onClick={() => {
+        isOpen === false ? setIsOpen(true) : setIsOpen(!isOpen);
+      }}
+      onHoverStart={() => {
+        setIsOpen(true);
+      }}
+      onHoverEnd={() => {
+        setIsOpen(false);
+      }}
+    >
       <img className="project-thumbnail" src={project.thumbnail} alt="" />
 
       <motion.div className="project-wrapper" variants={animateWrapper}>

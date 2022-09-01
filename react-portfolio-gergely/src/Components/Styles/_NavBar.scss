@@ -25,6 +25,11 @@
   @include flexCenter;
   height: $navbarHeight;
   justify-content: space-between;
+  visibility: hidden;
+  //laptop//
+  @media (min-width: 768px) {
+    visibility: visible;
+  }
   //large//
   @media (min-width: 1200px) {
     padding-right: 3vw;
@@ -155,9 +160,11 @@
   .hamburger-box {
     z-index: 10;
     @include flexCenter;
-    position: absolute;
+    position: fixed;
     right: 2rem;
+    top: 2rem;
     cursor: pointer;
+    visibility: visible;
     //tablet//
     @media (min-width: 768px) {
       visibility: hidden;
@@ -172,7 +179,7 @@
   }
 
   .dropdown-menu {
-    z-index: -10;
+    pointer-events: none;
     @include flexCenter;
     position: fixed;
     flex-direction: column;
@@ -183,7 +190,10 @@
     left: 0;
     font-size: 5rem;
     padding: 1rem;
+    padding-top: $navbarHeight;
     background: rgb(30, 30, 30);
+    visibility: visible;
+
     @media (min-width: 768px) {
       visibility: hidden;
     }

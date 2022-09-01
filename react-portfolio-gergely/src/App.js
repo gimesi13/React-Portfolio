@@ -22,8 +22,4 @@ function App() {
 
 export default App;
 
-//setting up the projects section
-//recoloring
 //recoloring some of the projects
-//optimising  responsive images
-//touchscreen hovers
