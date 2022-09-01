@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { motion, useAnimation, AnimatePresence, Variants } from "framer-motion";
+import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { CgMenu, CgClose } from "react-icons/cg";
-import hacker from "./Pictures/undraw_cloud_files_wmo8.svg";
-
+/* import hacker from "./Pictures/undraw_cloud_files_wmo8.svg";
+ */
 function NavBar() {
   /* STATES */
   const [menuOpened, setMenuOpened] = useState(false);
@@ -62,11 +62,22 @@ function NavBar() {
   const dropdownVariant = {
     hidden: {
       clipPath: "circle(0% at 100% 0%)",
-      transition: { duration: 0.5 },
+      transition: { delay: 0.3, duration: 0.5, staggerChildren: 0.05 },
     },
     show: {
       clipPath: "circle(132.7% at 94% 6%)",
-      transition: { duration: 0.5 },
+      transition: { duration: 0.5, delayChildren: 0.25, staggerChildren: 0.18 },
+    },
+  };
+
+  const animateText = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
     },
   };
 
@@ -155,7 +166,7 @@ function NavBar() {
         <motion.div
           className="dropdown-menu"
           variants={dropdownVariant}
-          initial={false}
+          initial="hidden"
           animate={menuOpened ? "show" : "hidden"}
         >
           {menuItems.map((item) => {
@@ -165,6 +176,7 @@ function NavBar() {
                 key={item.href}
                 href={item.href}
                 whileTap={{ scale: 0.9 }}
+                variants={animateText}
               >
                 <div>{item.text}</div>
               </motion.a>

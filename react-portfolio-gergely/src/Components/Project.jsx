@@ -32,7 +32,7 @@ function Project({ project }) {
       <motion.div className="project-wrapper" variants={animateWrapper}>
         <motion.h1 variants={animateText}>{project.name}</motion.h1>
         <motion.p variants={animateText}>{project.description}</motion.p>
-        <div>
+        <motion.div variants={animateText}>
           <a
             className="live-link"
             href={project.link}
@@ -45,7 +45,7 @@ function Project({ project }) {
             <GoLogoGithub className="live-code" />
             <HiCode className="live-code" />
           </a>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );

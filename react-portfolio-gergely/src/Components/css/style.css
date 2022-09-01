@@ -255,13 +255,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   right: 0;
   top: 0;
   bottom: 0;
   left: 0;
   font-size: 5rem;
   padding: 1rem;
-  gap: 2rem;
   background: rgb(30, 30, 30);
 }
 @media (min-width: 768px) {
@@ -274,7 +276,7 @@
   transition: color 0.3s;
 }
 .navbar .dropdown-menu div:hover {
-  color: rgb(215, 190, 105);
+  color: rgb(162, 47, 219);
 }
 
 .navbar.small {
