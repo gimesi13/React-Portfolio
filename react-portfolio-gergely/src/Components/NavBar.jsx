@@ -75,7 +75,7 @@ function NavBar() {
       <div className="navbar-left">
         <a href="#home">
           <div className="navbar-left-logo">
-            <img className="hacker-svg" src={hacker} alt="hacker" />
+            {/* <img className="hacker-svg" src={hacker} alt="hacker" /> */}
           </div>
         </a>
       </div>

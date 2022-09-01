@@ -75,17 +75,17 @@
       z-index: 1;
       position: relative;
       background: rgb(40, 40, 40);
-
       @include flexCenter;
       width: 100%;
       padding: 0.5rem;
 
       .tab-background {
-        background: rgb(215, 190, 105);
-        background: radial-gradient(
-          circle,
-          rgba(215, 190, 105, 1) 8%,
-          rgba(116, 102, 56, 1) 100%
+        background: rgb(97, 59, 144);
+        background: linear-gradient(
+          54deg,
+          rgba(97, 59, 144, 1) 0%,
+          rgba(156, 35, 195, 1) 34%,
+          rgba(218, 95, 255, 1) 98%
         );
         z-index: -1;
         position: absolute;
@@ -140,7 +140,7 @@
       width: 100%;
       //desktop//
       @media (min-width: 992px) {
-        text-align: left;
+        text-align: center;
       }
     }
 

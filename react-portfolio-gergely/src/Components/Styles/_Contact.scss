@@ -17,13 +17,14 @@
 
 .contact {
   position: relative;
-  background: rgb(20, 20, 20);
+  background: rgb(26, 68, 159);
   background: linear-gradient(
-    309deg,
-    rgba(20, 20, 20, 1) 0%,
-    rgba(89, 79, 45, 1) 50%,
-    rgba(215, 190, 105, 1) 100%
+    108deg,
+    rgba(26, 68, 159, 1) 2%,
+    rgba(70, 15, 99, 1) 38%,
+    rgba(222, 110, 255, 1) 100%
   );
+
   @include flexCenter;
   flex-direction: column;
   justify-content: space-between;

@@ -16,7 +16,7 @@
 */
 
 .home-section {
-  background: url("../Pictures/13107749_5137894.webp");
+  background: url("../Pictures/pexels-marek-piwnicki-11032573(1).jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -70,11 +70,12 @@
     }
 
     .home-left-welcome-wrapper {
-      background: rgb(110, 97, 53);
+      background: rgb(221, 99, 218);
       background: linear-gradient(
-        19deg,
-        rgba(110, 97, 53, 1) 20%,
-        rgba(20, 20, 20, 0) 60%
+        211deg,
+        rgba(221, 99, 218, 0.7) 14%,
+        rgba(62, 47, 154, 1) 62%,
+        rgba(0, 50, 119, 1) 78%
       );
       padding: 3px;
       .home-left-welcome {

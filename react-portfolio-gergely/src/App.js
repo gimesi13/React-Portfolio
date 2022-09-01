@@ -5,7 +5,6 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { CgWebsite } from "react-icons/cg";
 
 function App() {
   /* STATES */
@@ -23,6 +22,8 @@ function App() {
 
 export default App;
 
-//optimising  responsive images
 //setting up the projects section
-//launching the website
+//recoloring
+//recoloring some of the projects
+//optimising  responsive images
+//touchscreen hovers

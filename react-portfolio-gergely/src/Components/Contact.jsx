@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import inbox from "./Pictures/undraw_mobile_inbox_re_ciwq.svg";
+import inbox from "./Pictures/undraw_envelope_re_f5j4.svg";
 
 /* variants */
 const animatedElement = {

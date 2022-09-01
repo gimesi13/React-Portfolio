@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { GoLogoGithub } from "react-icons/go";
+import { HiCode } from "react-icons/hi";
 
 function Project({ project }) {
   const animateWrapper = {
@@ -39,7 +41,10 @@ function Project({ project }) {
           >
             live link
           </a>
-          <a /* href={""} */>check on github</a>
+          <a href={project.github} target="_blank" rel="noreferrer">
+            <GoLogoGithub className="live-code" />
+            <HiCode className="live-code" />
+          </a>
         </div>
       </motion.div>
     </motion.div>

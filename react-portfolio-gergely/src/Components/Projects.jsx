@@ -16,7 +16,8 @@ const projects = {
     tech: "RESTful API, React, CSS ",
     link: "https://630f24bd5d2985782545567d--brilliant-semolina-fe6b3a.netlify.app/",
     thumbnail: dailyImg,
-    github: "",
+    github:
+      "https://github.com/gimesi13/Learning-React/tree/main/wishes-project",
   },
   project2: {
     name: "React Todo",
@@ -24,6 +25,7 @@ const projects = {
     tech: " React, CSS ",
     link: "https://630f46dba4f93a128ec222d8--whimsical-cascaron-343463.netlify.app/",
     thumbnail: todoImg,
+    github: "https://github.com/gimesi13/Learning-React/tree/main/react-todo",
   },
   project3: {
     name: "Framer Motion",
@@ -31,6 +33,8 @@ const projects = {
     tech: " React, CSS, Framer Motion ",
     link: "https://630f4991a273c6006e1ffa19--neon-dusk-d9a33c.netlify.app/",
     thumbnail: framerImg,
+    github:
+      "https://github.com/gimesi13/Framer-Motion-React/tree/master/framer-motion/framer-motion-2/framer-animations-2",
   },
   project4: {
     name: "Tailwind CSS",
@@ -38,6 +42,8 @@ const projects = {
     tech: " React, Tailwind.css, Typed",
     link: "https://630f4e1ef2160c0058fda2cf--magical-kangaroo-e27e00.netlify.app/",
     thumbnail: tailwindImg,
+    github:
+      "https://github.com/gimesi13/Learning-React/tree/main/learning-tailwind-css",
   },
   project5: {
     name: "Hostel Website Vanilla Javascript",
@@ -45,6 +51,7 @@ const projects = {
     tech: "Javascript, Jquery, HTML, CSS",
     link: "https://630f4fcb1146540082c5b2bf--transcendent-kringle-11b49f.netlify.app/",
     thumbnail: ghmJsImg,
+    github: "https://github.com/gimesi13/GuestHouse-Mitterbach--Vanilla-JS-",
   },
 };
 function Projects() {
@@ -128,11 +135,7 @@ function Projects() {
           <div className="thinker">
             <img className="thinker-svg" src={thinker} alt="thinker" />
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-            voluptatibus blanditiis nihil non, iste ipsam perferendis debitis
-            nulla! Quam, autem.
-          </p>
+          <p>More projects coming soon... 😊</p>
         </motion.div>
       </AnimatePresence>
 
@@ -145,10 +148,7 @@ function Projects() {
         <div className="thinker">
           <img className="thinker-svg" src={thinker} alt="thinker" />
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-          veritatis.
-        </p>
+        <p>No more projects to show...</p>
       </motion.div>
       {/* </motion.div> */}
     </section>
