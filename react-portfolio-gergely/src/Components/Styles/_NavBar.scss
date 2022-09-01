@@ -172,6 +172,7 @@
   }
 
   .dropdown-menu {
+    z-index: -10;
     @include flexCenter;
     position: fixed;
     flex-direction: column;

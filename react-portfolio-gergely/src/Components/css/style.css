@@ -258,6 +258,7 @@
   font-size: 3rem;
 }
 .navbar .dropdown-menu {
+  z-index: -10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
