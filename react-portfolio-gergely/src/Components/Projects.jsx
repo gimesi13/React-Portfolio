@@ -46,8 +46,8 @@ const projects = {
       "https://github.com/gimesi13/Learning-React/tree/main/learning-tailwind-css",
   },
   project5: {
-    name: "Hostel Website Vanilla Javascript",
-    description: "One page website for a ski-hostel",
+    name: "Hostel Website",
+    description: "One page website for a ski-hostel (Vanilla JS)",
     tech: "Javascript, Jquery, HTML, CSS",
     link: "https://630f4fcb1146540082c5b2bf--transcendent-kringle-11b49f.netlify.app/",
     thumbnail: ghmJsImg,

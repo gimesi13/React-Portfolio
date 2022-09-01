@@ -15,6 +15,7 @@
 } 
 */
 .navbar {
+  color: rgb(219, 219, 219);
   z-index: 10;
   position: fixed;
   top: 0;
@@ -34,6 +35,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   /* LEFT SECTION */
+  /* no logo yet */
   /* RIGHT SECTION */
   /* HAMBURGER MENU */
 }
@@ -148,6 +150,11 @@
     gap: 5vw;
   }
 }
+.navbar .navbar-right .routers div:hover {
+  color: white;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
 .navbar .navbar-right .soc-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +194,11 @@
     height: 2.5rem;
   }
 }
+.navbar .navbar-right .soc-icons div:hover {
+  color: white;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
 .navbar .navbar-right .connect-button-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,9 +213,14 @@
   width: 100%;
 }
 .navbar .navbar-right .connect-button-box .connect-button {
-  border: 2px solid white;
+  border: 2px solid rgb(219, 219, 219);
   padding: 1rem;
   white-space: nowrap;
+}
+.navbar .navbar-right .connect-button-box div:hover {
+  color: white;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .navbar .hamburger-box {
   z-index: 10;
@@ -609,6 +626,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 3rem;
+  gap: 2rem;
 }
 @media (min-width: 576px) {
   .skills {
@@ -638,6 +656,7 @@
 .skills p {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0;
 }
 
 /* MIXINS */
@@ -1130,6 +1149,9 @@
 }
 .contact .contact-right .contact-right-send .contact-right-send-input {
   cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 0;
   font-size: 1.5rem;
   padding: 1rem;
   padding-left: 4rem;

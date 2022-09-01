@@ -68,24 +68,33 @@ function Footer() {
         </div>
         <div className="footer-bottom-right">
           <div className="soc-icons-footer">
-            <motion.div
-              whileHover={{ y: -5, cursor: "pointer" }}
-              whileTap={{ scale: 0.9 }}
+            <a
+              href="https://www.linkedin.com/in/gergely-gimesi-661639207/"
+              target={"_blank"}
+              rel="noreferrer"
             >
-              <BsLinkedin className="social-icons" />
-            </motion.div>
-            <motion.div
-              whileHover={{ y: -5, cursor: "pointer" }}
-              whileTap={{ scale: 0.9 }}
+              <motion.div whileHover={{ y: -6 }} whileTap={{ scale: 0.9 }}>
+                <BsLinkedin className="social-icons linkedin" />
+              </motion.div>
+            </a>
+            <a
+              href="https://www.facebook.com/gergely.gimesi"
+              target={"_blank"}
+              rel="noreferrer"
             >
-              <BsFacebook className="social-icons" />
-            </motion.div>
-            <motion.div
-              whileHover={{ y: -5, cursor: "pointer" }}
-              whileTap={{ scale: 0.9 }}
+              <motion.div whileHover={{ y: -6 }} whileTap={{ scale: 0.9 }}>
+                <BsFacebook className="social-icons facebook" />
+              </motion.div>
+            </a>
+            <a
+              href="https://github.com/gimesi13/"
+              target={"_blank"}
+              rel="noreferrer"
             >
-              <BsGithub className="social-icons" />
-            </motion.div>
+              <motion.div whileHover={{ y: -6 }} whileTap={{ scale: 0.9 }}>
+                <BsGithub className="social-icons github" />
+              </motion.div>
+            </a>
           </div>
           <div>Created By Gergely Gimesi on 2022.</div>
         </div>

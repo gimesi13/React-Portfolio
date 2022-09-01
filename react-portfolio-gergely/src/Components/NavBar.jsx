@@ -110,7 +110,7 @@ function NavBar() {
         </div>
         <div className="soc-icons">
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/gergely-gimesi-661639207/"
             target={"_blank"}
             rel="noreferrer"
           >

@@ -16,6 +16,7 @@
 */
 
 .navbar {
+  color: rgb(219, 219, 219);
   z-index: 10;
   position: fixed;
   top: 0;
@@ -31,6 +32,7 @@
   }
 
   /* LEFT SECTION */
+  /* no logo yet */
   .navbar-left {
     @include flexCenter;
     height: 100%;
@@ -97,6 +99,11 @@
         padding-left: 2rem;
         gap: 5vw;
       }
+
+      div:hover {
+        color: white;
+        transition: color 0.3s;
+      }
     }
 
     .soc-icons {
@@ -121,6 +128,10 @@
           }
         }
       }
+      div:hover {
+        color: white;
+        transition: color 0.3s;
+      }
     }
 
     .connect-button-box {
@@ -129,9 +140,13 @@
       width: 100%;
 
       .connect-button {
-        border: 2px solid white;
+        border: 2px solid rgb(219, 219, 219);
         padding: 1rem;
         white-space: nowrap;
+      }
+      div:hover {
+        color: white;
+        transition: color 0.3s;
       }
     }
   }
