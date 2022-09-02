@@ -796,25 +796,28 @@
   width: 90%;
   gap: 1rem;
 }
-@media (min-width: 576px) {
-  .projects .tab-1 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 @media (min-width: 768px) {
   .projects .tab-1 {
     gap: 2rem;
-  }
-}
-@media (min-width: 992px) {
-  .projects .tab-1 {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
   .projects .tab-1 {
+    grid-template-columns: 1fr 1fr 1fr;
     width: 85%;
   }
+}
+.projects .tab-1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .tab-2,
 .projects .tab-3 {
@@ -1044,7 +1047,8 @@
   background: rgba(255, 255, 255, 0.139);
   width: 100%;
   font-size: 2rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1054,23 +1058,45 @@
 }
 .contact .contact-right .contact-right-name input::-webkit-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-name input::-moz-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-name input:-ms-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-name input::-ms-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-name input::placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-right .contact-right-name input::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-name input::-moz-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-name input:-ms-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-name input::-ms-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-name input::placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
 .contact .contact-right .contact-right-email-phone {
   display: -webkit-box;
@@ -1089,7 +1115,8 @@
   background: rgba(255, 255, 255, 0.139);
   width: 100%;
   font-size: 2rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1099,23 +1126,45 @@
 }
 .contact .contact-right .contact-right-email-phone input::-webkit-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-email-phone input::-moz-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-email-phone input:-ms-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-email-phone input::-ms-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-email-phone input::placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-right .contact-right-email-phone input::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-email-phone input::-moz-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-email-phone input:-ms-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-email-phone input::-ms-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-email-phone input::placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
 .contact .contact-right .contact-right-message {
   display: -webkit-box;
@@ -1141,23 +1190,45 @@
 }
 .contact .contact-right .contact-right-message textarea::-webkit-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-message textarea::-moz-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-message textarea:-ms-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-message textarea::-ms-input-placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact .contact-right .contact-right-message textarea::placeholder {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-right .contact-right-message textarea::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-message textarea::-moz-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-message textarea:-ms-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-message textarea::-ms-input-placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .contact .contact-right .contact-right-message textarea::placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
 .contact .contact-right .contact-right-send {
   display: -webkit-box;
@@ -1169,13 +1240,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 0px;
 }
 .contact .contact-right .contact-right-send .contact-right-send-input {
   cursor: pointer;
   color: black;
   background-color: white;
-  border-radius: 0;
-  font-size: 1.5rem;
+  border-radius: 0px;
+  font-size: 1rem;
   padding: 1rem;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -1183,6 +1255,11 @@
   margin-bottom: 2rem;
   font-weight: bold;
   border: 2px solid black;
+}
+@media (min-width: 768px) {
+  .contact .contact-right .contact-right-send .contact-right-send-input {
+    font-size: 1.5rem;
+  }
 }
 
 /* MIXINS */
@@ -1571,10 +1648,16 @@
           align-items: center;
   border-radius: 2rem;
   overflow: hidden;
+  max-width: 27rem;
   /* image overflow fix */
   -webkit-mask-image: radial-gradient(white, black);
           mask-image: radial-gradient(white, black);
   border: 2px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 768px) {
+  .project {
+    max-width: 100%;
+  }
 }
 .project .project-thumbnail {
   width: 100%;
@@ -1600,6 +1683,7 @@
   width: 100%;
   height: 100%;
   background: rgba(21, 21, 21, 0.8);
+  gap: 3%;
 }
 .project .project-wrapper h1 {
   font-size: 1.5rem;
@@ -1629,10 +1713,22 @@
 }
 .project .project-wrapper div .live-link {
   padding: 0.5rem;
-  border: 2px solid white;
+  color: rgb(170, 170, 170);
+  border: 2px solid rgb(170, 170, 170);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.project .project-wrapper div .live-link:hover {
+  color: white;
 }
 .project .project-wrapper div .live-code {
+  color: rgb(170, 170, 170);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   font-size: 2.5rem;
+}
+.project .project-wrapper div .live-code:hover {
+  color: white;
 }
 
 html {
@@ -1650,11 +1746,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: rgb(255, 255, 255);
   background: black;
-}
-
-.fixed_body {
-  overflow: hidden;
-  block-size: 100%;
 }
 
 .App {

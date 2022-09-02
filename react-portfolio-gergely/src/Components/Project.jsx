@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+/* package to detect outside click. wrap around component */
+import OutsideClick from "detect-outside-click-react";
 import { GoLogoGithub } from "react-icons/go";
 import { HiCode } from "react-icons/hi";
 
@@ -27,48 +29,60 @@ function Project({ project }) {
     },
   };
 
-
   return (
-    <motion.div
-      className="project"
-      initial="hidden"
-      onClick={() => {
-        isOpen === false ? setIsOpen(true) : setIsOpen(!isOpen);
+    <OutsideClick
+      close={() => {
+        isOpen && setIsOpen(false);
       }}
-      onHoverStart={() => {
-        setIsOpen(true);
-      }}
-      onHoverEnd={() => {
-        setIsOpen(false);
-      }}
-      
-      viewport={{ once: false, amount: 0.3 }}
     >
-      <img className="project-thumbnail" src={project.thumbnail} alt="" />
-
       <motion.div
-        className="project-wrapper"
-        variants={animateWrapper}
-        animate={isOpen ? "show" : "hidden"}
+        className="project"
+        initial="hidden"
+        onClick={() => {
+          setIsOpen(true);
+        }}
+        onHoverStart={() => {
+          setIsOpen(true);
+        }}
+        onHoverEnd={() => {
+          setIsOpen(false);
+        }}
+        viewport={{ once: false, amount: 0.3 }}
       >
-        <motion.h1 variants={animateText}>{project.name}</motion.h1>
-        <motion.p variants={animateText}>{project.description}</motion.p>
-        <motion.div variants={animateText}>
-          <a
-            className="live-link"
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            live link
-          </a>
-          <a href={project.github} target="_blank" rel="noreferrer">
-            <GoLogoGithub className="live-code" />
-            <HiCode className="live-code" />
-          </a>
+        <img className="project-thumbnail" src={project.thumbnail} alt="" />
+
+        <motion.div
+          className="project-wrapper"
+          variants={animateWrapper}
+          animate={isOpen ? "show" : "hidden"}
+        >
+          <motion.h1 variants={animateText}>{project.name}</motion.h1>
+          <motion.p variants={animateText}>{project.description}</motion.p>
+          <motion.div variants={animateText}>
+            <motion.a
+              className="live-link"
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ borderRadius: "2rem" }}
+            >
+              live link
+            </motion.a>
+            <motion.a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              whileTap={{ scale: 0.9 }}
+              className="live-code"
+            >
+              <GoLogoGithub />
+              <HiCode />
+            </motion.a>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </OutsideClick>
   );
 }
 

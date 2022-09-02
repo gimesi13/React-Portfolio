@@ -11,8 +11,7 @@ import ghmJsImg from "./Pictures/ghm-js-image.PNG";
 const projects = {
   project1: {
     name: "Daily Quotes",
-    description:
-      "React App that can generate random wisdoms fetched from an API; stores information about them in a searchable library and in local storage",
+    description: "React wish generator with searchable and sortable library",
     tech: "RESTful API, React, CSS ",
     link: "https://brilliant-semolina-fe6b3a.netlify.app/",
     thumbnail: dailyImg,
@@ -21,7 +20,7 @@ const projects = {
   },
   project2: {
     name: "React Todo",
-    description: "Todo List with local storage built with React",
+    description: "Todo List with local storage",
     tech: " React, CSS ",
     link: "https://whimsical-cascaron-343463.netlify.app/",
     thumbnail: todoImg,
@@ -29,7 +28,7 @@ const projects = {
   },
   project3: {
     name: "Framer Motion",
-    description: "Some basic Framer Motion animations in a simle project",
+    description: "Some basic Framer Motion animations in a App",
     tech: " React, CSS, Framer Motion ",
     link: "https://neon-dusk-d9a33c.netlify.app/",
     thumbnail: framerImg,
@@ -60,6 +59,7 @@ function Projects() {
 
   const tabs = ["tab1", "tab2", "tab3"];
 
+  /* ANIMATION VARIANTS */
   const animateTab = {
     inactive: {
       clipPath: "circle(0% at 50% 50%)",
@@ -74,6 +74,14 @@ function Projects() {
   const animateGrid = {
     hidden: { x: "100%", display: "none" },
     show: { x: 0, display: "grid" },
+  };
+
+  const animatedElement = {
+    offscreen: { opacity: 0, transition: { duration: 0.6 } },
+    onscreen: {
+      opacity: 1,
+      transition: { duration: 0.6 },
+    },
   };
 
   return (
@@ -115,11 +123,47 @@ function Projects() {
           initial={false}
           animate={activeTab === "tab1" ? "show" : "hidden"}
         >
-          <Project project={projects.project1} />
-          <Project project={projects.project2} />
-          <Project project={projects.project3} />
-          <Project project={projects.project4} />
-          <Project project={projects.project5} />
+          <motion.div
+            variants={animatedElement}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ amount: 0.3 }}
+          >
+            <Project project={projects.project1} />
+          </motion.div>
+          <motion.div
+            variants={animatedElement}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ amount: 0.3 }}
+          >
+            <Project project={projects.project2} />
+          </motion.div>
+          <motion.div
+            variants={animatedElement}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ amount: 0.3 }}
+          >
+            <Project project={projects.project3} />
+          </motion.div>
+          <motion.div
+            variants={animatedElement}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ amount: 0.3 }}
+          >
+            <Project project={projects.project4} />
+          </motion.div>
+          <motion.div
+            variants={animatedElement}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ amount: 0.3 }}
+          >
+            <Project project={projects.project5} />
+          </motion.div>
+
           {/*
           <Project project={projects.project6} /> */}
         </motion.div>

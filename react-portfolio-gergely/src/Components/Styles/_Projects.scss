@@ -102,19 +102,23 @@
     gap: 1rem;
     //tablet//
     @media (min-width: 576px) {
-      grid-template-columns: 1fr 1fr;
     }
     //laptop//
     @media (min-width: 768px) {
       gap: 2rem;
+      grid-template-columns: 1fr 1fr;
     }
     //desktop//
     @media (min-width: 992px) {
-      grid-template-columns: 1fr 1fr 1fr;
     }
     //large//
     @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
       width: 85%;
+    }
+
+    div {
+      @include flexCenter;
     }
   }
   .tab-2,

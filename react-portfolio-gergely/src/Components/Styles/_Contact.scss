@@ -119,7 +119,8 @@
         background: rgba(255, 255, 255, 0.139);
         width: 100%;
         font-size: 2rem;
-        padding: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
         flex: 1;
         border-radius: 1rem;
         border: 2px solid rgb(255, 255, 255);
@@ -127,7 +128,13 @@
       }
       input::placeholder {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
+
+        //laptop//
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
       }
     }
     .contact-right-email-phone {
@@ -139,7 +146,8 @@
         background: rgba(255, 255, 255, 0.139);
         width: 100%;
         font-size: 2rem;
-        padding: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
         flex: 1;
         border-radius: 1rem;
         border: 2px solid rgb(255, 255, 255);
@@ -147,7 +155,12 @@
       }
       input::placeholder {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
+
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
       }
     }
 
@@ -167,19 +180,24 @@
       }
       textarea::placeholder {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
       }
     }
 
     .contact-right-send {
       @include flexCenter;
+      border-radius: 0px;
 
       .contact-right-send-input {
         cursor: pointer;
         color: black;
         background-color: white;
-        border-radius: 0;
-        font-size: 1.5rem;
+        border-radius: 0px;
+        font-size: 1rem;
         padding: 1rem;
         padding-left: 4rem;
         padding-right: 4rem;
@@ -187,6 +205,10 @@
         margin-bottom: 2rem;
         font-weight: bold;
         border: 2px solid black;
+
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+        }
       }
     }
   }

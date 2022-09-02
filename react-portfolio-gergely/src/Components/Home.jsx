@@ -13,16 +13,32 @@ const animatedElement = {
   },
 };
 
+const animatedText = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  show: { opacity: 1, x: 0 },
+};
+
 function Home() {
   return (
     <section className="banner home-section" id="home">
-      <div className="home-left">
-        <div className="home-left-welcome-wrapper">
+      <motion.div
+        className="home-left"
+        initial="hidden"
+        animate="show"
+        transition={{ staggerChildren: 0.15, delayChildren: 0.5 }}
+      >
+        <motion.div
+          className="home-left-welcome-wrapper"
+          variants={animatedText}
+        >
           <div className="home-left-welcome">Welcome to my Portfolio</div>
-        </div>
+        </motion.div>
 
-        <h1>Hi! I'm Gergely!</h1>
-        <p>
+        <motion.h1 variants={animatedText}>Hi! I'm Gergely!</motion.h1>
+        <motion.p variants={animatedText}>
           I'm a Fronted Developer and I build web applications for living using
           React.js.<br></br>
           Well, not exactly... I'm not a professional developer yet, but I spend
@@ -34,8 +50,8 @@ function Home() {
           section. <br></br>
           If you like my work, or you have anything to share with me about it.
           Don't hesitate to contact me!
-        </p>
-        <a href="#contact">
+        </motion.p>
+        <motion.a href="#contact" variants={animatedText}>
           <motion.div
             className="home-left-connect"
             whileHover={{ x: 10 }}
@@ -43,8 +59,8 @@ function Home() {
           >
             Lets Connect <BsArrowRightCircle className="right-arrow-svg" />
           </motion.div>
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
       <motion.div
         className="home-right"
         variants={animatedElement}
