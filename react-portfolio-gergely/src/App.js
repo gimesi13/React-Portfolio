@@ -23,3 +23,5 @@ function App() {
 export default App;
 
 //recoloring some of the projects
+//projects hover phone css
+//more whileinview animations

@@ -14,7 +14,7 @@ const projects = {
     description:
       "React App that can generate random wisdoms fetched from an API; stores information about them in a searchable library and in local storage",
     tech: "RESTful API, React, CSS ",
-    link: "https://630f24bd5d2985782545567d--brilliant-semolina-fe6b3a.netlify.app/",
+    link: "https://brilliant-semolina-fe6b3a.netlify.app/",
     thumbnail: dailyImg,
     github:
       "https://github.com/gimesi13/Learning-React/tree/main/wishes-project",
@@ -23,7 +23,7 @@ const projects = {
     name: "React Todo",
     description: "Todo List with local storage built with React",
     tech: " React, CSS ",
-    link: "https://630f46dba4f93a128ec222d8--whimsical-cascaron-343463.netlify.app/",
+    link: "https://whimsical-cascaron-343463.netlify.app/",
     thumbnail: todoImg,
     github: "https://github.com/gimesi13/Learning-React/tree/main/react-todo",
   },
@@ -31,7 +31,7 @@ const projects = {
     name: "Framer Motion",
     description: "Some basic Framer Motion animations in a simle project",
     tech: " React, CSS, Framer Motion ",
-    link: "https://630f4991a273c6006e1ffa19--neon-dusk-d9a33c.netlify.app/",
+    link: "https://neon-dusk-d9a33c.netlify.app/",
     thumbnail: framerImg,
     github:
       "https://github.com/gimesi13/Framer-Motion-React/tree/master/framer-motion/framer-motion-2/framer-animations-2",

@@ -27,21 +27,10 @@ function Project({ project }) {
     },
   };
 
-  const animateProjectCard = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-    },
-  };
 
   return (
     <motion.div
       className="project"
-      variants={animateProjectCard}
       initial="hidden"
       onClick={() => {
         isOpen === false ? setIsOpen(true) : setIsOpen(!isOpen);
@@ -52,7 +41,7 @@ function Project({ project }) {
       onHoverEnd={() => {
         setIsOpen(false);
       }}
-      whileInView="show"
+      
       viewport={{ once: false, amount: 0.3 }}
     >
       <img className="project-thumbnail" src={project.thumbnail} alt="" />
