@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.ca017821.css",
-    "main.js": "/React-Portfolio/static/js/main.eb711079.js",
+    "main.js": "/React-Portfolio/static/js/main.2d0d3b5a.js",
     "static/media/ghm-js-image.PNG": "/React-Portfolio/static/media/ghm-js-image.a59390dd58079d574024.PNG",
+    "static/media/framer-motion-image.PNG": "/React-Portfolio/static/media/framer-motion-image.3bb42a6013e3ae44cefb.PNG",
     "static/media/react-todo-image.PNG": "/React-Portfolio/static/media/react-todo-image.cb8b8c755ebe747db108.PNG",
     "static/media/daily-quotes-image.PNG": "/React-Portfolio/static/media/daily-quotes-image.5a2f53b65f548351036a.PNG",
     "static/media/pexels-marek-piwnicki-11032573(1).jpg": "/React-Portfolio/static/media/pexels-marek-piwnicki-11032573(1).7ac4e711504ef5664b40.jpg",
-    "static/media/framer-motion-image.PNG": "/React-Portfolio/static/media/framer-motion-image.cdab37eeac6ae83e6e9e.PNG",
     "static/media/tailwind-image.PNG": "/React-Portfolio/static/media/tailwind-image.0716c9c38ac00bed5cc9.PNG",
     "static/media/undraw_feeling_proud_qne1.svg": "/React-Portfolio/static/media/undraw_feeling_proud_qne1.00b3c01da6e54d89d204c1f074267b68.svg",
     "static/media/undraw_envelope_re_f5j4.svg": "/React-Portfolio/static/media/undraw_envelope_re_f5j4.360529cf65d49a392582e2e591d17ae9.svg",
     "static/media/undraw_code_thinking_re_gka2.svg": "/React-Portfolio/static/media/undraw_code_thinking_re_gka2.4d0c894df83c9f4d52b775f17961f2bd.svg",
     "index.html": "/React-Portfolio/index.html",
     "main.ca017821.css.map": "/React-Portfolio/static/css/main.ca017821.css.map",
-    "main.eb711079.js.map": "/React-Portfolio/static/js/main.eb711079.js.map"
+    "main.2d0d3b5a.js.map": "/React-Portfolio/static/js/main.2d0d3b5a.js.map"
   },
   "entrypoints": [
     "static/css/main.ca017821.css",
-    "static/js/main.eb711079.js"
+    "static/js/main.2d0d3b5a.js"
   ]
 }
