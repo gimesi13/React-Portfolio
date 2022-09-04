@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import inbox from "./Pictures/undraw_envelope_re_f5j4.svg";
+import { SiMinutemailer } from "react-icons/si";
 
 /* variants */
 const animatedElement = {
@@ -52,6 +53,11 @@ function Contact() {
       </motion.div>
       <form ref={form} onSubmit={sendEmail} className="contact-right">
         <h1>Get In Touch</h1>
+
+        <h2>
+          {" "}
+          <SiMinutemailer /> gergely.gimesi@gmail.com
+        </h2>
 
         <div className="contact-right-name">
           <input type="text" name="fistname" placeholder="First Name" />

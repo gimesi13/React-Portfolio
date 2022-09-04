@@ -454,8 +454,8 @@
 }
 .home-section .home-left h1 {
   font-size: 3rem;
-  margin: 0;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 @media (min-width: 992px) {
   .home-section .home-left h1 {
@@ -1011,7 +1011,6 @@
   width: 100%;
   margin: 1rem;
   gap: 1rem;
-  font-size: 2rem;
 }
 @media (min-width: 768px) {
   .contact .contact-right {
@@ -1029,6 +1028,15 @@
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   font-size: 3rem;
+}
+.contact .contact-right h2 {
+  color: rgb(219, 219, 219);
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contact .contact-right h2 {
+    font-size: 1.5rem;
+  }
 }
 .contact .contact-right .contact-right-name {
   display: -webkit-box;
