@@ -7,9 +7,19 @@ import todoImg from "./Pictures/react-todo-image.PNG";
 import framerImg from "./Pictures/framer-motion-image.PNG";
 import tailwindImg from "./Pictures/tailwind-image.PNG";
 import ghmJsImg from "./Pictures/ghm-js-image.PNG";
+import ghmRImg from "./Pictures/ghm-react-image.PNG";
 
-const projects = {
-  project1: {
+const projects = [
+  {
+    name: "Youth-Hostel Webpage",
+    description:
+      "Multi-language responsive Website of an Austrian Youth Hostel",
+    tech: "React, Framer, SASS",
+    link: "https://guesthousemitterbach.com/",
+    thumbnail: ghmRImg,
+    github: "https://github.com/gimesi13/GuestHouse-Mitterbach--Vanilla-JS-",
+  },
+  {
     name: "Daily Quotes",
     description: "React wish generator with searchable and sortable library",
     tech: "RESTful API, React, CSS ",
@@ -18,7 +28,7 @@ const projects = {
     github:
       "https://github.com/gimesi13/Learning-React/tree/main/wishes-project",
   },
-  project2: {
+  {
     name: "React Todo",
     description: "Todo List with local storage",
     tech: " React, CSS ",
@@ -26,16 +36,16 @@ const projects = {
     thumbnail: todoImg,
     github: "https://github.com/gimesi13/Learning-React/tree/main/react-todo",
   },
-  project3: {
+  {
     name: "Framer Motion",
-    description: "Some basic Framer Motion animations in a App",
+    description: "Some basic Framer Motion animations",
     tech: " React, CSS, Framer Motion ",
     link: "https://neon-dusk-d9a33c.netlify.app/",
     thumbnail: framerImg,
     github:
       "https://github.com/gimesi13/Framer-Motion-React/tree/master/framer-motion/framer-motion-2/framer-animations-2",
   },
-  project4: {
+  {
     name: "Tailwind CSS",
     description: "Homepage built with Tailwind and React",
     tech: " React, Tailwind.css, Typed",
@@ -44,15 +54,15 @@ const projects = {
     github:
       "https://github.com/gimesi13/Learning-React/tree/main/learning-tailwind-css",
   },
-  project5: {
+  {
     name: "Hostel Website",
-    description: "One page website for a ski-hostel (Vanilla JS)",
+    description: "!Old Version! One page website for a ski-hostel (Vanilla JS)",
     tech: "Javascript, Jquery, HTML, CSS",
     link: "https://630f4fcb1146540082c5b2bf--transcendent-kringle-11b49f.netlify.app/",
     thumbnail: ghmJsImg,
     github: "https://github.com/gimesi13/GuestHouse-Mitterbach--Vanilla-JS-",
   },
-};
+];
 function Projects() {
   //setting up states for the tab operators
   const [activeTab, setActiveTab] = useState("tab1");
@@ -115,7 +125,6 @@ function Projects() {
           );
         })}
       </div>
-      {/* <motion.div className="projects-grids-container"> */}
       <AnimatePresence>
         <motion.div
           className="projects-grig tab-1"
@@ -123,7 +132,20 @@ function Projects() {
           initial={false}
           animate={activeTab === "tab1" ? "show" : "hidden"}
         >
-          <motion.div
+          {projects.map((project, i) => {
+            return (
+              <motion.div
+                key={i}
+                variants={animatedElement}
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ amount: 0.3 }}
+              >
+                <Project project={project} />
+              </motion.div>
+            );
+          })}
+          {/* <motion.div
             variants={animatedElement}
             initial={"offscreen"}
             whileInView={"onscreen"}
@@ -162,7 +184,7 @@ function Projects() {
             viewport={{ amount: 0.3 }}
           >
             <Project project={projects.project5} />
-          </motion.div>
+          </motion.div> */}
 
           {/*
           <Project project={projects.project6} /> */}

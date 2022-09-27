@@ -96,7 +96,7 @@ function Footer() {
               </motion.div>
             </a>
           </div>
-          <div>Created By Gergely Gimesi on 2022.</div>
+          <div>Created By Gergely Gimesi © 2022.</div>
         </div>
       </div>
     </section>

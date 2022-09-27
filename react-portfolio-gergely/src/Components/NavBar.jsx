@@ -37,8 +37,7 @@ function NavBar() {
     setMenuOpened(!menuOpened);
   };
 
-  /* still performance issues */
-  // navbar on scroll behavior //bad for performance, need to work on it
+  // navbar on scroll behavior
   const handleNavBarScroll = () => {
     if (window.scrollY >= 1) {
       setNavbar(true);
