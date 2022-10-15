@@ -1800,9 +1800,7 @@ body {
 
 .App {
   width: 100%;
-  max-width: 1500px;
-  -webkit-box-shadow: 0px 0px 17px 10px #1a1a1a;
-          box-shadow: 0px 0px 17px 10px #1a1a1a;
+  max-width: 1600px;
 }
 
 .navlink {

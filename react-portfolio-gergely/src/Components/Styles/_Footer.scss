@@ -101,6 +101,7 @@
       @include flexCenter;
 
       .up-arrow-svg {
+        //mix-blend-mode: difference;
         font-size: 4rem;
         margin-left: 1rem;
         @media (min-width: 576px) {
