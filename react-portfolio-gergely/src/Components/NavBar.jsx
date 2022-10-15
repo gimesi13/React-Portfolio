@@ -47,7 +47,9 @@ function NavBar() {
   };
   useEffect(() => {
     if (navbar === true) {
-      shrink.set({
+      const nav = document.getElementById("navbar");
+      nav.classList.add("small");
+      /*       shrink.set({
         height: 128,
         backgroundColor: "transparent",
         boxShadow: "none",
@@ -56,9 +58,11 @@ function NavBar() {
         height: 96,
         backgroundColor: "black",
         boxShadow: `0px 0px 15px 6px #252525`,
-      });
+      }); */
     } else {
-      grow.set({
+      const nav = document.getElementById("navbar");
+      nav.classList.remove("small");
+      /*       grow.set({
         height: 96,
         backgroundColor: "black",
         boxShadow: `0px 0px 15px 6px #252525`,
@@ -67,7 +71,7 @@ function NavBar() {
         height: 128,
         backgroundColor: "transparent",
         boxShadow: "none",
-      });
+      }); */
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navbar]);
@@ -99,7 +103,7 @@ function NavBar() {
   };
 
   return (
-    <motion.div className="navbar" animate={navbar ? shrink : grow}>
+    <motion.div id="navbar" className="navbar" animate={navbar ? shrink : grow}>
       <div className="navbar-left">
         <a href="#home">
           <div className="navbar-left-logo">

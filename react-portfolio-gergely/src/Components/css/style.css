@@ -35,6 +35,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   visibility: hidden;
+  background-color: rgba(17, 17, 17, 0.26);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   /* LEFT SECTION */
   /* no logo yet */
   /* RIGHT SECTION */
@@ -319,9 +324,14 @@
 }
 
 .navbar.small {
-  height: 6rem;
   -webkit-box-shadow: 0px 0px 17px 10px #252525;
           box-shadow: 0px 0px 17px 10px #252525;
+  height: 96px;
+  background-color: rgb(17, 17, 17);
+  -webkit-box-shadow: 0px 0px 10px 4px #252525;
+          box-shadow: 0px 0px 10px 4px #252525;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* MIXINS */
@@ -392,13 +402,13 @@
 @media (min-width: 992px) {
   .home-section {
     gap: 1rem;
-    height: 80vh;
-    min-height: auto;
   }
 }
 @media (min-height: 992px) {
   .home-section {
     gap: 1rem;
+    height: 80vh;
+    min-height: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -1785,7 +1795,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgb(230, 230, 230);
-  background: rgb(17, 17, 17);
+  background: rgb(0, 0, 0);
 }
 
 .App {
