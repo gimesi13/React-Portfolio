@@ -363,6 +363,7 @@
   padding-left: 2rem;
   padding-bottom: 7rem;
   gap: 1rem;
+  max-height: 1300px;
   min-height: 80vh;
   font-size: 1.5rem;
   /*//// LEFT SECTION ////*/
@@ -389,6 +390,8 @@
 @media (min-width: 992px) {
   .home-section {
     gap: 1rem;
+    height: 80vh;
+    min-height: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -818,6 +821,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .projects .tab-2,
 .projects .tab-3 {
@@ -1190,7 +1194,7 @@
   background: rgba(255, 255, 255, 0.139);
   font-size: 2rem;
   width: 100%;
-  min-height: 20vh;
+  min-height: 13rem;
   padding: 0.5rem;
   border-radius: 1rem;
   border: 2px solid rgb(255, 255, 255);
@@ -1294,7 +1298,7 @@
   /* BOTTOM PART */
 }
 .footer-section .footer-build-box {
-  background: rgb(236, 236, 236);
+  background: rgb(219, 219, 219);
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1772,15 +1776,22 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(255, 255, 255);
-  background: black;
+  color: rgb(230, 230, 230);
+  background: rgb(17, 17, 17);
 }
 
 .App {
   width: 100%;
+  max-width: 1500px;
 }
 
 .navlink {
@@ -1808,4 +1819,9 @@ option {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  max-width: 100vw;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

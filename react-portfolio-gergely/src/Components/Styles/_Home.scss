@@ -28,6 +28,7 @@
   padding-left: 2rem;
   padding-bottom: 7rem;
   gap: 1rem;
+  max-height: 1300px;
   min-height: 80vh;
   font-size: 1.5rem;
   //tablet//
@@ -46,6 +47,8 @@
   //desktop//
   @media (min-width: 992px) {
     gap: 1rem;
+    height: 80vh;
+    min-height: auto;
   }
   //large//
   @media (min-width: 1200px) {
@@ -113,9 +116,8 @@
       @media (min-width: 1200px) {
         font-size: 5rem;
       }
-    }s
-
-    p {
+    }
+    s p {
       line-height: 2.7rem;
 
       @media (min-width: 992px) {
