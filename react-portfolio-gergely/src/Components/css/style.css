@@ -320,6 +320,8 @@
 
 .navbar.small {
   height: 6rem;
+  -webkit-box-shadow: 0px 0px 17px 10px #252525;
+          box-shadow: 0px 0px 17px 10px #252525;
 }
 
 /* MIXINS */
@@ -392,6 +394,11 @@
     gap: 1rem;
     height: 80vh;
     min-height: auto;
+  }
+}
+@media (min-height: 992px) {
+  .home-section {
+    gap: 1rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1354,8 +1361,6 @@
   .footer-section .footer-build-box {
     border-radius: 6rem;
     padding: 6rem;
-    padding-left: 10vw;
-    padding-right: 10vw;
   }
 }
 .footer-section .footer-build-box h1 {
@@ -1392,12 +1397,6 @@
   gap: 1rem;
   /* LEFT SECTION */
   /* RIGHT SECTION */
-}
-@media (min-width: 576px) {
-  .footer-section .footer-bottom-container {
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
 }
 .footer-section .footer-bottom-container a:hover {
   color: white;
@@ -1792,6 +1791,8 @@ body {
 .App {
   width: 100%;
   max-width: 1500px;
+  -webkit-box-shadow: 0px 0px 17px 10px #1a1a1a;
+          box-shadow: 0px 0px 17px 10px #1a1a1a;
 }
 
 .navlink {

@@ -64,8 +64,6 @@
     @media (min-width: 1200px) {
       border-radius: 6rem;
       padding: 6rem;
-      padding-left: 10vw;
-      padding-right: 10vw;
     }
     h1 {
       text-align: center;
@@ -92,11 +90,6 @@
     padding-right: 0.5rem;
     padding-bottom: 1rem;
     gap: 1rem;
-    //tablet//
-    @media (min-width: 576px) {
-      padding-left: 4vw;
-      padding-right: 4vw;
-    }
 
     a:hover {
       color: white;

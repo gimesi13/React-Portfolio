@@ -47,11 +47,27 @@ function NavBar() {
   };
   useEffect(() => {
     if (navbar === true) {
-      shrink.set({ height: 128, backgroundColor: "transparent" });
-      shrink.start({ height: 96, backgroundColor: "black" });
+      shrink.set({
+        height: 128,
+        backgroundColor: "transparent",
+        boxShadow: "none",
+      });
+      shrink.start({
+        height: 96,
+        backgroundColor: "black",
+        boxShadow: `0px 0px 15px 6px #252525`,
+      });
     } else {
-      grow.set({ height: 96, backgroundColor: "black" });
-      grow.start({ height: 128, backgroundColor: "transparent" });
+      grow.set({
+        height: 96,
+        backgroundColor: "black",
+        boxShadow: `0px 0px 15px 6px #252525`,
+      });
+      grow.start({
+        height: 128,
+        backgroundColor: "transparent",
+        boxShadow: "none",
+      });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navbar]);

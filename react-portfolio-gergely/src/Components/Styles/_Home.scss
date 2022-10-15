@@ -50,6 +50,9 @@
     height: 80vh;
     min-height: auto;
   }
+  @media (min-height: 992px) {
+    gap: 1rem;
+  }
   //large//
   @media (min-width: 1200px) {
     gap: 2rem;
