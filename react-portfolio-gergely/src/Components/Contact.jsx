@@ -40,6 +40,7 @@ function Contact() {
 
   return (
     <section className="banner contact">
+      <div className="wrapper"></div>
       <div className="navlink" id="contact" />
 
       <motion.div

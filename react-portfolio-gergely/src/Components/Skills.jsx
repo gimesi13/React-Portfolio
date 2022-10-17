@@ -51,6 +51,7 @@ const breakPoints = [
 function Skills() {
   return (
     <section className="banner skills-section">
+      <div className="wrapper"></div>
       <div className="navlink navlink-t2" id="skills" />
       <motion.div
         initial={{

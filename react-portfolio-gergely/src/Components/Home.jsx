@@ -24,6 +24,7 @@ const animatedText = {
 function Home() {
   return (
     <section className="banner home-section" id="home">
+      <div className="wrapper"></div>
       <motion.div
         className="home-left"
         initial="hidden"

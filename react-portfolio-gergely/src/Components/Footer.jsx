@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
@@ -44,8 +44,33 @@ const breakPoints = [
 ];
 
 function Footer() {
+  const [scrolltop, setScrollTop] = useState(false);
+
+  // arrow on scroll behavior
+  const handleArrowScroll = () => {
+    if (window.scrollY >= 1000) {
+      !scrolltop && setScrollTop(true);
+    } else {
+      scrolltop && setScrollTop(false);
+    }
+  };
+
+  useEffect(() => {
+    if (scrolltop === true) {
+      let nav = document.getElementById("uparrow");
+      nav.classList.add("visible-svg");
+    } else {
+      let nav = document.getElementById("uparrow");
+      nav.classList.remove("visible-svg");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scrolltop]);
+
+  window.addEventListener("scroll", handleArrowScroll, { passive: true });
+
   return (
     <section className="banner footer-section" id="footer">
+      <div className="wrapper"></div>
       <motion.div
         initial={{
           y: -90,
@@ -58,13 +83,9 @@ function Footer() {
 
       <div className="footer-bottom-container">
         <div className="footer-bottom-left">
-          <motion.a
-            href="#home"
-            whileHover={{ y: -10 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <BsArrowUpCircleFill className="up-arrow-svg" />
-          </motion.a>
+          <a href="#home">
+            <BsArrowUpCircleFill id="uparrow" className="up-arrow-svg" />
+          </a>
         </div>
         <div className="footer-bottom-right">
           <div className="soc-icons-footer">

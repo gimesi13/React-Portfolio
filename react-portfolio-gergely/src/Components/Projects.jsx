@@ -96,6 +96,7 @@ function Projects() {
 
   return (
     <section className="banner projects">
+      <div className="wrapper"></div>
       <div className="navlink" id="projects" />
 
       <h1>Projects</h1>

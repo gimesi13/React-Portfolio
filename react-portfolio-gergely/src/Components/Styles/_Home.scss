@@ -16,10 +16,14 @@
 */
 
 .home-section {
-  background: url("../Pictures/pexels-marek-piwnicki-11032573(1).jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position: relative;
+  .wrapper {
+    z-index: -10;
+    background: url("../Pictures/pexels-marek-piwnicki-11032573(1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
   @include flexCenter;
   flex-direction: column;
