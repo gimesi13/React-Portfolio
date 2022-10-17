@@ -81,14 +81,26 @@
     }
 
     .home-left-welcome-wrapper {
-      background: rgb(221, 99, 218);
+      background: rgba(221, 99, 219, 0.288);
       background: linear-gradient(
         211deg,
-        rgba(221, 99, 218, 0.7) 14%,
-        rgba(62, 47, 154, 1) 62%,
-        rgba(0, 50, 119, 1) 78%
+        rgba(221, 99, 219, 0.334) 14%,
+        rgba(61, 47, 154, 0.662) 62%,
+        rgba(0, 50, 119, 0.671) 78%
       );
       padding: 3px;
+
+      //laptop//
+      @media (min-width: 768px) {
+        background: rgba(221, 99, 219, 0.658);
+        background: linear-gradient(
+          211deg,
+          rgba(221, 99, 219, 0.555) 14%,
+          rgba(62, 47, 154, 1) 62%,
+          rgba(0, 50, 119, 1) 78%
+        );
+        padding: 3px;
+      }
       .home-left-welcome {
         background: rgba(20, 20, 20, 1);
         background: linear-gradient(
