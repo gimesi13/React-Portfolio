@@ -17,7 +17,7 @@ const projects = [
     tech: "React, Framer, SASS",
     link: "https://guesthousemitterbach.com/",
     thumbnail: ghmRImg,
-    github: "https://github.com/gimesi13/GuestHouse-Mitterbach--Vanilla-JS-",
+    github: "https://github.com/gimesi13/GHM-React/tree/main/ghm-react",
   },
   {
     name: "Daily Quotes",
